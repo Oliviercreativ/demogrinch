@@ -16,9 +16,11 @@ export default defineNuxtRouteMiddleware(async (to, from) => {
     .eq('owner', user.value.id)
     .eq('statut', true)
 
+  // En mode démo, on autorise l'accès même si l'utilisateur n'est pas owner
+  // La page admin gérera l'affichage des boutiques de démo disponibles
   if (error || !data || data.length === 0) {
-    // Pas owner, on redirige
-    return navigateTo('/')
+    // Pas owner, mais on autorise l'accès pour le démo
+    // La page admin affichera les boutiques de démo disponibles
   }
-  // Sinon, accès autorisé
+  // Accès autorisé (même sans être owner en mode démo)
 }) 

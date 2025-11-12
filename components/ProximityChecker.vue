@@ -53,7 +53,8 @@ async function checkProximity() {
     const { data: shops, error: shopError } = await supabase
       .from('boutique')
       .select('*')
-      .eq('statut', true)
+      .eq('statut', false)
+      .eq('demo', true)
 
     if (shopError) throw shopError
 

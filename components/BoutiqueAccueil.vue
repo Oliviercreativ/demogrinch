@@ -61,7 +61,8 @@ const fetchBoutiques = async () => {
     const { data, error: fetchError } = await supabase
       .from('boutique')
       .select('*')
-      .eq('statut', true)
+      .eq('statut', false)
+      .eq('demo', true)
       .order('created_at', { ascending: false })
       .limit(5) // Limiter à 5 boutiques
 

@@ -33,7 +33,8 @@ async function loadBoutiques() {
     const { data, error } = await supabase
       .from('boutique')
       .select('*')
-      .eq('statut', true)
+      .eq('statut', false)
+      .eq('demo', true)
       .order('name_shop', { ascending: true })
 
     if (error) throw error

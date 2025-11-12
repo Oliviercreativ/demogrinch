@@ -148,42 +148,102 @@ onMounted(() => {
 
 <template>
   <div v-if="filteredRewards.length > 0">
-    <!-- Carousel horizontal avec logos uniquement -->
+    <!-- Listing vertical des cartes de fidélité -->
     <div class="relative py-6">
       <p class="text-lg uppercase font-semibold text-blue-800 text-left mb-4">Vos cartes de fidélité</p>
-      <!-- Conteneur carousel avec scroll horizontal -->
-      <div class="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
-        <!-- Carte logo pour chaque boutique -->
+      <!-- Liste verticale -->
+      <div class="flex flex-col gap-3">
+        <!-- Carte pour chaque boutique -->
         <NuxtLink
           v-for="reward in filteredRewards"
           :key="reward.rewardSlug"
           :to="`/reward/${reward.rewardSlug}`"
-          class="flex-shrink-0 snap-start"
+          class="block"
         >
-          <div class="flex flex-col items-center gap-2 w-20">
-            <!-- Logo circulaire de la boutique -->
-            <div
-              class="w-16 h-16 rounded-2xl overflow-hidden shadow-md flex items-center justify-center"
-              :class="getLogoContainerClass(reward)"
-            >
-              <img
-                v-if="reward.boutique?.logo_shop"
-                :src="reward.boutique.logo_shop"
-                :alt="reward.boutique.name_shop"
-                class="w-full h-full object-cover"
-              />
+          <div
+            class="bg-white rounded-lg p-4"
+            :class="isRewardWon(reward) ? 'bg-white' : isOneVisitAway(reward) ? 'border' : 'border'"
+          >
+            <div class="flex items-center gap-4">
+              <!-- Logo de la boutique -->
               <div
-                v-else
-                class="w-full h-full bg-gray-200 flex items-center justify-center"
+                class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 flex items-center justify-center"
+                :class="getLogoContainerClass(reward)"
               >
-                <span class="text-2xl">🏪</span>
+                <img
+                  v-if="reward.boutique?.logo_shop"
+                  :src="reward.boutique.logo_shop"
+                  :alt="reward.boutique.name_shop"
+                  class="w-full h-full object-cover"
+                />
+                <div
+                  v-else
+                  class="w-full h-full bg-gray-200 flex items-center justify-center"
+                >
+                  <span class="text-2xl">🏪</span>
+                </div>
+              </div>
+
+              <!-- Informations de la carte -->
+              <div class="flex-1 min-w-0">
+                <h3 
+                  class="font-semibold text-base mb-1 truncate"
+                  :class="isRewardWon(reward) ? 'text-blue-800' : 'text-blue-800'"
+                >
+                  {{ reward.boutique?.name_shop }}
+                </h3>
+                <!-- Barre de progression -->
+                <div class="w-full">
+                  <div class="flex justify-between items-center mb-1">
+                    <span 
+                      class="text-xs font-medium"
+                      :class="isRewardWon(reward) ? 'text-blue-800' : 'text-gray-600'"
+                    >
+                      {{ reward.new_solde || 0 }} / {{ reward.boutique?.limite || 0 }} points
+                    </span>
+                    <span 
+                      v-if="isRewardWon(reward)"
+                      class="text-xs font-semibold text-blue-800 bg-white px-2 py-1 rounded"
+                    >
+                      Récompense disponible !
+                    </span>
+                    <span 
+                      v-else-if="isOneVisitAway(reward)"
+                      class="text-xs font-semibold text-blue-800 bg-blue-100 px-2 py-1 rounded"
+                    >
+                      Plus qu'une visite !
+                    </span>
+                  </div>
+                  <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                    <div
+                      class="h-full rounded-full transition-all duration-300"
+                      :class="isRewardWon(reward) ? 'bg-blue-800' : 'bg-blue-600'"
+                      :style="{ width: `${Math.min(((reward.new_solde || 0) / (reward.boutique?.limite || 1)) * 100, 100)}%` }"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Flèche de navigation -->
+              <div class="flex-shrink-0">
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  class="icon icon-tabler icon-tabler-chevron-right"
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  stroke-width="2" 
+                  stroke="currentColor" 
+                  fill="none" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round"
+                  :class="isRewardWon(reward) ? 'text-blue-800' : 'text-gray-400'"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M9 6l6 6l-6 6" />
+                </svg>
               </div>
             </div>
-
-            <!-- Nom de la boutique (tronqué) -->
-            <p class="text-xs text-center text-gray-700 line-clamp-2 w-full">
-              {{ reward.boutique?.name_shop }}
-            </p>
           </div>
         </NuxtLink>
       </div>
@@ -191,19 +251,3 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped>
-/* Masquer la scrollbar mais garder la fonctionnalité de scroll */
-.scrollbar-hide {
-  -ms-overflow-style: none;  /* IE et Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;  /* Chrome, Safari et Opera */
-}
-
-/* Améliorer le scroll horizontal sur mobile */
-.overflow-x-auto {
-  -webkit-overflow-scrolling: touch;
-}
-</style>

@@ -64,7 +64,8 @@ const fetchBoutiques = async () => {
     const { data: allBoutiques, error: boutiquesError } = await supabase
       .from('boutique')
       .select('*')
-      .eq('statut', true)
+      .eq('statut', false)
+      .eq('demo', true)
 
     if (boutiquesError) throw boutiquesError
 

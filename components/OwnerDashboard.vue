@@ -211,11 +211,11 @@ const showDashboard = computed(() => isOwner.value && boutique.value)
       <div class="mt-6 flex gap-3">
         <NuxtLink to="/admin/liste-clients"
           class="flex-1 bg-white/20 hover:bg-white/30 text-white px-4 py-3 rounded-lg text-center font-medium transition-colors">
-          📊 Voir les clients
+          Mes clients
         </NuxtLink>
         <NuxtLink :to="`/shop/${boutique.slug}`"
           class="flex-1 bg-white/20 hover:bg-white/30 text-white px-4 py-3 rounded-lg text-center font-medium transition-colors">
-          🏪 Ma boutique
+          Ma boutique
         </NuxtLink>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, computed } from 'vue'
 import { useSupabaseClient, useSupabaseUser } from '#imports'
 import Loader from '@/components/Loader.vue'
 import NotifyButton from '@/components/NotifyButton.vue';
@@ -20,6 +20,8 @@ const currentUser = useSupabaseUser()
 const isOwner = ref(false)
 const isLoading = ref(true)
 const ownedBoutiques = ref([])
+const demoBoutiques = ref([])
+const showDemoSelection = ref(false)
 
 const protectedUserId = 'd04dad76-47de-468b-ba95-b5269b1d5385'
 const isProtectedUser = computed(() => {
@@ -96,8 +98,33 @@ const exportProfiles = async () => {
   document.body.removeChild(link);
 };
 
-onMounted(async () => {
+// Attribuer une boutique de démo à l'utilisateur
+const assignDemoBoutique = async (boutique, skipReload = false) => {
+  try {
+    // Attribuer la boutique à l'utilisateur (même si elle avait déjà un owner pour le démo)
+    const { error } = await supabase
+      .from('boutique')
+      .update({ owner: user.value.id })
+      .eq('id', boutique.id)
+      .eq('demo', true)
+
+    if (error) throw error
+
+    // Recharger les boutiques sauf si skipReload est true
+    if (!skipReload) {
+      await loadBoutiques()
+    }
+    showDemoSelection.value = false
+  } catch (error) {
+    console.error('Erreur lors de l\'attribution de la boutique:', error)
+    alert('Erreur lors de l\'attribution de la boutique')
+  }
+}
+
+// Charger les boutiques (owner ou démo)
+const loadBoutiques = async () => {
   if (user.value) {
+    // Charger les boutiques dont l'utilisateur est owner
     const { data: boutiques, error } = await supabase
       .from('boutique')
       .select('*')
@@ -106,10 +133,39 @@ onMounted(async () => {
     if (boutiques && boutiques.length > 0) {
       isOwner.value = true
       ownedBoutiques.value = boutiques
-
       await Promise.all(ownedBoutiques.value.map(fetchBoutiqueData))
+    } else {
+      // Si pas owner, charger toutes les boutiques de démo disponibles (peu importe le owner)
+      const { data: demos, error: demoError } = await supabase
+        .from('boutique')
+        .select('*')
+        .eq('demo', true)
+        .order('name_shop', { ascending: true })
+        .limit(10)
+
+      if (!demoError && demos && demos.length > 0) {
+        // Prendre la première boutique de démo et l'attribuer automatiquement
+        const firstDemo = demos[0]
+        await assignDemoBoutique(firstDemo, true) // skipReload = true pour éviter la récursion
+        
+        // Recharger après attribution
+        const { data: boutiques, error: reloadError } = await supabase
+          .from('boutique')
+          .select('*')
+          .eq('owner', user.value.id)
+
+        if (!reloadError && boutiques && boutiques.length > 0) {
+          isOwner.value = true
+          ownedBoutiques.value = boutiques
+          await Promise.all(ownedBoutiques.value.map(fetchBoutiqueData))
+        }
+      }
     }
   }
+}
+
+onMounted(async () => {
+  await loadBoutiques()
   isLoading.value = false
 })
 </script>
@@ -119,13 +175,42 @@ onMounted(async () => {
     <div v-if="isLoading">
       <Loader />
     </div>
-    <div v-else-if="!isOwner" class="py-24">Vous n'avez pas les autorisations nécessaires pour accéder à cette page.
-    </div>
     <div v-else>
       <div class="pt-8 pb-24">
         <p class="text-lg uppercase font-semibold text-blue-800 dark:text-white text-center pb-10">tableau de bord</p>
+        
+        <!-- Section de sélection de boutique de démo -->
+        <div v-if="showDemoSelection && demoBoutiques.length > 0" class="mb-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
+          <p class="text-sm font-semibold text-blue-800 mb-4 text-center">Mode Démo - Sélectionnez une boutique pour découvrir les fonctionnalités</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div 
+              v-for="boutique in demoBoutiques" 
+              :key="boutique.id"
+              class="bg-white rounded-lg shadow p-4 cursor-pointer hover:shadow-lg transition-shadow"
+              @click="assignDemoBoutique(boutique)"
+            >
+              <div class="flex items-center gap-4">
+                <img 
+                  v-if="boutique.logo_shop" 
+                  :src="boutique.logo_shop" 
+                  :alt="boutique.name_shop"
+                  class="w-16 h-16 object-cover rounded-lg"
+                />
+                <div class="flex-1">
+                  <h3 class="font-semibold text-blue-800">{{ boutique.name_shop }}</h3>
+                  <p class="text-xs text-gray-600">{{ boutique.categories_shop }}</p>
+                  <p class="text-xs text-gray-500 mt-1">{{ boutique.formule_shop }}</p>
+                </div>
+                <button class="bg-blue-800 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-blue-900">
+                  Sélectionner
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="flex flex-col justify-center items-start">
-          <div v-if="isProtectedUser" class="w-full">
+          <div v-if="isProtectedUser" class="hidden w-full">
             <div class="border-b border-b border-b-gray-200 w-full">
               <NuxtLink to="/admin/liste-scans" class="p-2 flex items-center justify-between w-full">
                 <div class="flex justify-start items-center gap-3">
