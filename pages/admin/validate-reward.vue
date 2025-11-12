@@ -172,7 +172,7 @@
                     </template>
                   </div>
                   <template v-if="!reward.is_used" class="flex items-center space-x-2">
-                    <button class="ml-4 px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 text-xs"
+                    <button class="ml-4 px-3 py-1 bg-blue-600 text-white rounded text-xs"
                       @click="marquerCommeUtilise(reward)">
                       Marquer comme utilisé
                     </button>

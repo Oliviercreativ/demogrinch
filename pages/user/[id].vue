@@ -597,7 +597,7 @@ onBeforeUnmount(() => {
         <!-- Bouton scanner à nouveau -->
         <div class="w-full flex items-center justify-center py-4 mt-6">
           <NuxtLink to="/login"
-            class="bg-blue-800 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-all">
+            class="bg-blue-800 text-white px-8 py-4 rounded-xl font-semibold transition-all">
             Voir mes points de fidélité
           </NuxtLink>
         </div>

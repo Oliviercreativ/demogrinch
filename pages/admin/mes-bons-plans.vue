@@ -169,7 +169,7 @@ onMounted(() => {
       </div>
       <button 
         @click="createNewBonPlan"
-        class="bg-blue-800 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+        class="bg-blue-800 text-white px-6 py-2 rounded-lg transition"
       >
         + Nouveau bon plan
       </button>
@@ -194,7 +194,7 @@ onMounted(() => {
       <p class="text-gray-400 text-sm mb-6">Créez votre premier bon plan pour attirer vos clients !</p>
       <button 
         @click="createNewBonPlan"
-        class="bg-blue-800 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+        class="bg-blue-800 text-white px-6 py-2 rounded-lg transition"
       >
         Créer mon premier bon plan
       </button>

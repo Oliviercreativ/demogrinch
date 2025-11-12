@@ -106,29 +106,7 @@ const showDashboard = computed(() => isOwner.value && boutique.value)
 </script>
 
 <template>
-  <div v-if="showDashboard" class="bg-gradient-to-r from-blue-800 to-blue-900 rounded-xl overflow-hidden">
-    <!-- Header du tableau de bord -->
-    <div class="px-6 py-4 bg-blue-900/50">
-      <div class="flex items-center justify-between">
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-5 0H3m2 0h4M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-            </svg>
-          </div>
-          <div>
-            <h2 class="text-white font-bold text-lg">{{ boutique.name_shop }}</h2>
-            <p class="text-blue-200 text-sm">Tableau de bord</p>
-          </div>
-        </div>
-        <NuxtLink to="/admin"
-          class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
-          Gérer →
-        </NuxtLink>
-      </div>
-    </div>
+  <div v-if="showDashboard" class="bg-blue-800 rounded-xl overflow-hidden">
 
     <!-- Statistiques -->
     <div v-if="isLoading" class="p-6">
@@ -216,6 +194,10 @@ const showDashboard = computed(() => isOwner.value && boutique.value)
         <NuxtLink :to="`/shop/${boutique.slug}`"
           class="flex-1 bg-white/20 hover:bg-white/30 text-white px-4 py-3 rounded-lg text-center font-medium transition-colors">
           Ma boutique
+        </NuxtLink>
+        <NuxtLink :to="`/admin`"
+          class="flex-1 bg-white/20 hover:bg-white/30 text-white px-4 py-3 rounded-lg text-center font-medium transition-colors">
+          Gérer
         </NuxtLink>
       </div>
     </div>

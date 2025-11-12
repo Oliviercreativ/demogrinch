@@ -199,7 +199,7 @@ onMounted(() => {
               <div class="flex gap-2 justify-center">
                 <button
                   @click="copyUrl"
-                  class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm rounded-lg transition-colors"
+                  class="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg transition-colors"
                 >
                   📋 Copier l'URL
                 </button>

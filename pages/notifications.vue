@@ -290,7 +290,7 @@ const stripHtml = (html) => {
                           'text-xs font-medium px-2 py-0.5 rounded-full',
                           message.category === 'urgent' ? 'bg-red-100 text-red-800' :
                           message.category === 'promo' ? 'bg-green-100 text-green-800' :
-                          message.category === 'maintenance' ? 'bg-orange-100 text-orange-800' :
+                          message.category === 'maintenance' ? 'bg-cyan-100 text-cyan-800' :
                           message.category === 'update' ? 'bg-yellow-100 text-yellow-800' :
                           'bg-blue-100 text-blue-800'
                         ]">
@@ -313,7 +313,7 @@ const stripHtml = (html) => {
                   <span v-if="message.type === 'global' && message.priority > 0"
                         :class="[
                           'text-xs font-medium px-2 py-0.5 rounded-full',
-                          message.priority === 2 ? 'bg-red-100 text-red-800' : 'bg-orange-100 text-orange-800'
+                          message.priority === 2 ? 'bg-red-100 text-red-800' : 'bg-cyan-100 text-cyan-800'
                         ]">
                     {{ message.priority === 2 ? '⚠️ Urgent' : '📌 Important' }}
                   </span>

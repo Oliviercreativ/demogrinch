@@ -32,7 +32,7 @@
         <!-- Actions -->
         <div class="space-y-2">
             <button v-if="!hasActiveNotifications" @click="enableNotifications" :disabled="isLoading"
-                class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 disabled:opacity-50">
+                class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg disabled:opacity-50">
                 {{ isLoading ? 'Activation...' : '🔔 Activer les notifications' }}
             </button>
 

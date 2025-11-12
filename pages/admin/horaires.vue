@@ -262,7 +262,7 @@ onMounted(async () => {
 
         <div class="mt-6 flex justify-end">
             <button @click="saveSchedule" :disabled="isLoading"
-                class="bg-blue-800 text-white px-6 py-2 rounded-lg hover:bg-blue-700 disabled:opacity-50">
+                class="bg-blue-800 text-white px-6 py-2 rounded-lg disabled:opacity-50">
                 {{ isLoading ? 'Enregistrement...' : 'Enregistrer les horaires' }}
             </button>
         </div>

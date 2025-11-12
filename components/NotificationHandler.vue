@@ -22,7 +22,7 @@
     <div class="bg-white p-4 rounded border space-y-2">
       <h4 class="font-medium mb-2">🧪 Tests</h4>
 
-      <button @click="testDatabase" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
+      <button @click="testDatabase" class="w-full bg-blue-500 text-white p-2 rounded">
         1. Tester la base de données
       </button>
 

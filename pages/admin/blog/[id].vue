@@ -25,7 +25,7 @@
           <button
             @click="saveArticle(true)"
             :disabled="saving"
-            class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors disabled:opacity-50"
+            class="px-4 py-2 bg-blue-600 text-white rounded-lg transition-colors disabled:opacity-50"
           >
             {{ saving ? 'Enregistrement...' : 'Publier' }}
           </button>

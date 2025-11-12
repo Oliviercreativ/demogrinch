@@ -40,7 +40,7 @@ const goToMessages = () => {
 <template>
   <div v-if="hasMessages" 
        @click="goToMessages"
-       class="bg-blue-800 text-white p-4 rounded-lg cursor-pointer hover:bg-blue-700 transition-colors">
+       class="bg-blue-800 text-white p-4 rounded-lg cursor-pointer transition-colors">
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-3">
         <!-- Icône de message -->

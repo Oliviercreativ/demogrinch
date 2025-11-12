@@ -67,7 +67,7 @@
       {{ errorMessage }}
     </div>
     
-    <div v-if="bellState === BELL_STATE.DISABLED && !loading && Notification && Notification.permission === 'denied'" class="mt-2 text-sm text-orange-600">
+    <div v-if="bellState === BELL_STATE.DISABLED && !loading && Notification && Notification.permission === 'denied'" class="mt-2 text-sm text-cyan-600">
       ⚠️ Les notifications sont bloquées. Autorisez-les dans les paramètres de votre navigateur.
     </div>
 

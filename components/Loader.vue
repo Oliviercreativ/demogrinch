@@ -1,7 +1,7 @@
 <template>
   <div class="loader">
     <div v-if="showSpinner" class="spinner"></div>
-    <button v-else @click="reloadPage" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+    <button v-else @click="reloadPage" class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
       Recharger la page
     </button>
   </div>

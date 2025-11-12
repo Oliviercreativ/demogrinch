@@ -81,7 +81,7 @@ onMounted(() => {
       </button>
       <button
         @click="selectedType = 'bonplan'"
-        :class="selectedType === 'bonplan' ? 'bg-orange-500 text-white' : 'bg-white text-gray-700 border border-gray-300'"
+        :class="selectedType === 'bonplan' ? 'bg-cyan-500 text-white' : 'bg-white text-gray-700 border border-gray-300'"
         class="px-4 py-2 rounded-lg font-medium whitespace-nowrap transition"
       >
         🏷️ Bons plans
@@ -136,7 +136,7 @@ onMounted(() => {
           <span 
             :class="{
               'bg-purple-600 text-white': bonPlan.position === 'pub',
-              'bg-orange-500 text-white': bonPlan.position === 'bonplan',
+              'bg-cyan-500 text-white': bonPlan.position === 'bonplan',
               'bg-pink-500 text-white': bonPlan.position === 'evenement',
               'bg-blue-500 text-white': bonPlan.position === 'atelier'
             }"
@@ -182,7 +182,7 @@ onMounted(() => {
 
           <button
             v-if="bonPlan.link_url"
-            class="w-full bg-blue-800 text-white py-2 rounded-lg hover:bg-blue-700 transition text-sm font-medium"
+            class="w-full bg-blue-800 text-white py-2 rounded-lg transition text-sm font-medium"
           >
             En savoir plus →
           </button>

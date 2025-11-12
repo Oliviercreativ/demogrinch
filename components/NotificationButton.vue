@@ -12,7 +12,7 @@
           </p>
           <div class="flex gap-2 mt-3">
             <button @click="requestNotifications"
-              class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm hover:bg-blue-700">
+              class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm">
               Oui, m'alerter
             </button>
             <button @click="dismissSoftPrompt" class="text-blue-600 px-4 py-2 text-sm hover:bg-blue-100 rounded-md">
@@ -28,7 +28,7 @@
 
     <!-- Étape 2: Bouton discret pour ceux qui ont refusé -->
     <button v-if="showDiscreteButton" @click="requestNotifications"
-      class="fixed bottom-20 right-4 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 z-40"
+      class="fixed bottom-20 right-4 bg-blue-600 text-white p-3 rounded-full z-40"
       title="Activer les notifications">
       🔔
     </button>

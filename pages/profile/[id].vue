@@ -312,7 +312,7 @@ onMounted(async () => {
 
             <button @click="addMultipleRewards(boutique.slug, boutique.pointsToAdd || 1)"
               :disabled="isAddingPoints[boutique.slug]"
-              class="mt-6 px-4 py-2 bg-blue-800 text-white text-base font-medium rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200">
+              class="mt-6 px-4 py-2 bg-blue-800 text-white text-base font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-300 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200">
               <span v-if="isAddingPoints[boutique.slug]" class="flex items-center">
                 <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
                   viewBox="0 0 24 24">

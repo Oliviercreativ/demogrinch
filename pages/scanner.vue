@@ -198,7 +198,7 @@ const redirectToLogin = () => {
             <p class="text-sm mt-2">Positionnez le QR code devant la caméra</p>
           </div>
           <button @click="startScanner" aria-label="Relancer le scanner QR code"
-            class="bg-blue-800 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg">
+            class="bg-blue-800 text-white px-6 py-3 rounded-lg text-lg">
             🔍 RELANCER LE SCANNER
           </button>
           <p class="text-sm text-gray-600 mt-4">

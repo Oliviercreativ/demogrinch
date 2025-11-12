@@ -202,7 +202,7 @@ const updateReward = async (action) => {
         <div class="flex justify-end">
   <button
     @click="updateReward('add')"
-    class="px-4 py-2 bg-blue-800 text-white text-base font-medium rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300"
+    class="px-4 py-2 bg-blue-800 text-white text-base font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-300"
   >
     Ajouter
   </button>

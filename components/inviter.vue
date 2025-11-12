@@ -89,7 +89,7 @@ const inviteUser = async () => {
         <button
           type="submit"
           :disabled="loading || !email"
-          class="w-full bg-blue-800 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          class="w-full bg-blue-800 text-white py-2 px-4 rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {{ loading ? 'Envoi en cours...' : 'Envoyer l\'invitation' }}
         </button>

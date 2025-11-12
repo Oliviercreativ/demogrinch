@@ -171,7 +171,7 @@ onMounted(async () => {
       <!-- Bouton d'envoi -->
       <div class="flex justify-end">
         <button type="submit" :disabled="isLoading"
-          class="bg-blue-800 text-white px-6 py-2 rounded-lg hover:bg-blue-700 disabled:opacity-50 transition-colors">
+          class="bg-blue-800 text-white px-6 py-2 rounded-lg disabled:opacity-50 transition-colors">
           {{ isLoading ? 'Envoi en cours...' : 'Envoyer le message' }}
         </button>
       </div>

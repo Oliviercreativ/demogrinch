@@ -377,7 +377,7 @@ onMounted(async () => {
           <div class="flex">
             <input type="text" v-model="newTag" @keydown="handleKeydown" placeholder="Ajouter des tags"
               class="flex-grow bg-white px-4 py-2 rounded-l-lg text-gray-700 border border-gray-200">
-            <button @click.prevent="addTag" class="bg-blue-800 text-white px-4 py-2 rounded-r-lg hover:bg-blue-800">
+            <button @click.prevent="addTag" class="bg-blue-800 text-white px-4 py-2 rounded-r-lg">
               Ajouter
             </button>
           </div>

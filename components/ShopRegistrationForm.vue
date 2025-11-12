@@ -397,7 +397,7 @@ async function handleSubmit() {
           >
           <button 
             @click.prevent="addTag"
-            class="bg-blue-800 text-white px-4 py-2 rounded-r-lg hover:bg-blue-800"
+            class="bg-blue-800 text-white px-4 py-2 rounded-r-lg"
           >
             Ajouter
           </button>

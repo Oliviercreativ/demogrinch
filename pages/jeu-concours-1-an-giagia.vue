@@ -33,7 +33,7 @@
         <div v-if="!aJoue && nombreParticipants < maxParticipants && nombreGagnants < maxWinners">
           <button
             @click="lancerRoulette"
-            class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline mt-4 transition duration-200"
+            class="w-full bg-blue-500 text-white font-bold py-3 px-4 rounded-lg focus:outline-none focus:shadow-outline mt-4 transition duration-200"
             :disabled="isSpinning"
           >
             Tenter votre chance !
@@ -69,7 +69,7 @@
       </div>
     </div>
     <div class="flex justify-center mt-6">
-        <NuxtLink to="/shop/giagia-coffee" class="text-white bg-blue-800 px-6 py-3 rounded-lg text-center cursor-pointer hover:bg-blue-700 transition-colors">
+        <NuxtLink to="/shop/giagia-coffee" class="text-white bg-blue-800 px-6 py-3 rounded-lg text-center cursor-pointer transition-colors">
       Découvrez Giagia
       </NuxtLink>
     </div>

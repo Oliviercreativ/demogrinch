@@ -4,7 +4,7 @@
     <button 
       @click="subscribe" 
       class="px-4 py-2 rounded-lg text-white"
-      :class="isSubscribed ? 'bg-green-500 hover:bg-green-600' : 'bg-blue-500 hover:bg-blue-600'"
+      :class="isSubscribed ? 'bg-green-500 hover:bg-green-600' : 'bg-blue-500'"
     >
       {{ isSubscribed ? 'Notifications activées' : 'S\'abonner aux notifications' }}
     </button>

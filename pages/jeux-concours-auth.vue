@@ -41,7 +41,7 @@
           </p>
           
           <div class="flex justify-center">
-            <NuxtLink to="/" class="text-white bg-blue-800 px-6 py-3 rounded-lg cursor-pointer hover:bg-blue-700 transition-colors">
+            <NuxtLink to="/" class="text-white bg-blue-800 px-6 py-3 rounded-lg cursor-pointer transition-colors">
               Retour à l'accueil
             </NuxtLink>
           </div>

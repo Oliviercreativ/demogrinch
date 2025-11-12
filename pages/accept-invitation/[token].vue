@@ -139,7 +139,7 @@ onMounted(async () => {
 
           <button
             type="submit"
-            class="w-full bg-blue-800 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+            class="w-full bg-blue-800 text-white py-3 px-4 rounded-lg transition-colors"
           >
             Créer mon compte
           </button>

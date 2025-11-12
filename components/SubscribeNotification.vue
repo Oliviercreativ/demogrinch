@@ -166,7 +166,7 @@ const handleSubmit = async () => {
       <button
         type="submit"
         :disabled="isLoading"
-        class="w-full bg-blue-800 text-white py-2 px-4 rounded-md hover:bg-blue-700 disabled:opacity-50"
+        class="w-full bg-blue-800 text-white py-2 px-4 rounded-md disabled:opacity-50"
       >
         {{ isLoading ? 'Inscription...' : 'S\'inscrire' }}
       </button>

@@ -37,3 +37,55 @@ body {
 input {
   @apply bg-white rounded-lg px-4 py-2;
 }
+
+.bg-blue-800 {
+  @apply bg-cyan-700;
+}
+.text-blue-800 {
+  @apply text-cyan-700;
+}
+.stroke-blue-800 {
+  @apply stroke-cyan-700;
+}
+.fill-blue-800 {
+  @apply fill-cyan-700;
+}
+
+.bg-blue-600 {
+  @apply bg-cyan-600;
+}
+.text-blue-600 {
+  @apply text-cyan-600;
+}
+.stroke-blue-600 {
+  @apply stroke-cyan-600;
+}
+.fill-blue-600 {
+  @apply fill-cyan-600;
+}
+
+.bg-blue-900 {
+  @apply bg-cyan-900;
+}
+.text-blue-900 {
+  @apply text-cyan-900;
+}
+.stroke-blue-900 {
+  @apply stroke-cyan-900;
+}
+.fill-blue-900 {
+  @apply fill-cyan-900;
+}
+
+.bg-blue-100 {
+  @apply bg-cyan-50;
+}
+.text-blue-100 {
+  @apply text-cyan-50;
+}
+.stroke-blue-100 {
+  @apply stroke-cyan-50;
+}
+.fill-blue-100 {
+  @apply fill-cyan-50;
+}

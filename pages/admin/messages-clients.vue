@@ -225,7 +225,7 @@ onMounted(async () => {
     <!-- Bouton créer -->
     <button
       @click="showModal = true"
-      class="bg-blue-800 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition mb-6"
+      class="bg-blue-800 text-white px-6 py-2 rounded-lg transition mb-6"
     >
       + Nouveau message
     </button>
@@ -363,7 +363,7 @@ onMounted(async () => {
           <div class="flex gap-3 pt-4">
             <button 
               type="submit"
-              class="bg-blue-800 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+              class="bg-blue-800 text-white px-6 py-2 rounded-lg transition"
             >
               {{ isEditing ? 'Mettre à jour' : 'Envoyer' }}
             </button>
@@ -406,7 +406,7 @@ onMounted(async () => {
                   <span 
                     :class="{
                       'bg-blue-100 text-blue-800': message.category === 'info',
-                      'bg-orange-100 text-orange-800': message.category === 'promo',
+                      'bg-cyan-100 text-cyan-800': message.category === 'promo',
                       'bg-green-100 text-green-800': message.category === 'update',
                       'bg-red-100 text-red-800': message.category === 'urgent'
                     }"

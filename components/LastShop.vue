@@ -59,7 +59,7 @@ onMounted(() => {
     <!--
     <div class="mt-6">
       <NuxtLink to="/shops"
-        class="block w-full bg-blue-800 text-white text-center px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300">
+        class="block w-full bg-blue-800 text-white text-center px-6 py-3 rounded-lg font-medium transition-colors duration-300">
         Découvrir toutes les boutiques
       </NuxtLink>
     </div>

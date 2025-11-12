@@ -125,7 +125,7 @@ watch(user, async (newUser) => {
                   <span v-for="shop in shops" :key="shop.slug" :class="[
                     'cursor-pointer px-3 py-1 rounded-full text-xs font-normal transition-colors',
                     selectedShops?.split(',').map(s => s.trim()).includes(shop.slug)
-                      ? 'bg-blue-800 text-white hover:bg-blue-800'
+                      ? 'bg-blue-800 text-white'
                       : 'bg-zinc-100 text-blue-800 hover:bg-zinc-200'
                   ]" @click="toggleShop(shop.slug)">
                     {{ shop.name_shop }}
@@ -134,7 +134,7 @@ watch(user, async (newUser) => {
 
                 <div class="flex justify-between items-center mt-6">
                   <button @click="saveFavoriteShops" :disabled="isSubmitting"
-                    class="bg-blue-800 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition-colors disabled:opacity-50">
+                    class="bg-blue-800 text-white px-4 py-2 rounded-md transition-colors disabled:opacity-50">
                     {{ isSubmitting ? 'Mise à jour...' : 'Mettre à jour' }}
                   </button>
                 </div>

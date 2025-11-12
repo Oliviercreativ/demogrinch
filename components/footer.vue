@@ -1,7 +1,7 @@
 <template>
  <div v-if="user">
   <div class="relative z-20">
-    <div class="fixed bottom-0 left-0 w-full bg-white dark:bg-blue-800 border border-gray-400 p-4 text-center"> 
+    <div class="fixed bottom-0 left-0 w-full bg-white dark:bg-blue-800 border border-t-gray-400 p-4 text-center"> 
       <div class="grid grid-cols-4 items-stretch">
         <NuxtLink to="/" :class="linkClasses('/')" class="flex flex-col items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home-heart text-center" width="26" height="26" viewBox="0 0 24 24" stroke-width="1" stroke="#9ca3af" fill="none" stroke-linecap="round" stroke-linejoin="round">

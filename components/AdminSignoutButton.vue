@@ -54,7 +54,7 @@
             <input v-model="userIdToSignOut" type="text" placeholder="ID utilisateur exact"
               class="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
             <button @click="signOutSpecificUser" :disabled="isLoading || !userIdToSignOut.trim()"
-              class="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg disabled:opacity-50 transition-colors">
+              class="bg-cyan-600 hover:bg-cyan-700 text-white px-4 py-2 rounded-lg disabled:opacity-50 transition-colors">
               <span v-if="isLoading">...</span>
               <span v-else>Déconnecter</span>
             </button>

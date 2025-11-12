@@ -143,7 +143,7 @@ const uploadFile = async (file) => {
         <button
           @click="uploadFromUrl"
           :disabled="uploading || !urlInput"
-          class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          class="px-4 py-2 bg-blue-600 text-white rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <span v-if="uploading" class="flex items-center">
             <svg class="animate-spin -ml-1 mr-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

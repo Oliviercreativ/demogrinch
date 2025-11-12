@@ -41,7 +41,7 @@
                 <span class="px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Gagnant</span>
               </div>
               <div class="flex justify-between items-center mb-2">
-                <span class="text-sm" :class="gagnant.used ? 'text-green-600' : 'text-orange-600'">
+                <span class="text-sm" :class="gagnant.used ? 'text-green-600' : 'text-cyan-600'">
                   {{ gagnant.used ? 'Lot distribué' : 'Lot en attente' }}
                 </span>
                 <button 

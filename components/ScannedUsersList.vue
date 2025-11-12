@@ -296,7 +296,7 @@ onMounted(() => {
 
                 <!-- ✅ BOUTON AMÉLIORÉ AVEC ÉTAT DE CHARGEMENT -->
                 <button @click.prevent="addQuickReward(user.id)" :disabled="isAddingPoints[user.id]"
-                  class="flex items-center justify-center bg-blue-800 text-white rounded-full w-8 h-8 hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  class="flex items-center justify-center bg-blue-800 text-white rounded-full w-8 h-8 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   :title="isAddingPoints[user.id] ? 'Ajout en cours...' : 'Ajouter un point'">
                   <!-- Icône de chargement -->
                   <svg v-if="isAddingPoints[user.id]" class="animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg"

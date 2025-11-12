@@ -190,7 +190,7 @@ const submitForm = () => {
           </div>
 
           <div class="flex gap-3 items-center">
-            <label class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer">
+            <label class="bg-blue-600 text-white px-4 py-2 rounded-lg transition cursor-pointer">
               <input 
                 type="file" 
                 accept="image/*" 
@@ -259,7 +259,7 @@ const submitForm = () => {
         <div class="flex gap-3 pt-4 border-t border-gray-200">
           <button 
             type="submit"
-            class="bg-blue-800 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-medium"
+            class="bg-blue-800 text-white px-8 py-3 rounded-lg transition font-medium"
           >
             {{ isEditing ? 'Mettre à jour' : 'Créer' }}
           </button>

@@ -582,7 +582,7 @@ const resetAndScan = () => {
           <button 
             v-if="!scanError && !rewardEarned" 
             @click="resetAndScan" 
-            class="text-white bg-blue-800 px-6 py-3 rounded-lg cursor-pointer hover:bg-blue-700 transition-colors"
+            class="text-white bg-blue-800 px-6 py-3 rounded-lg cursor-pointer transition-colors"
           >
             Scanner à nouveau
           </button>
@@ -590,7 +590,7 @@ const resetAndScan = () => {
           <NuxtLink 
             v-if="boutiqueSlug" 
             :to="`/shop/${boutiqueSlug}`" 
-            class="text-white bg-blue-800 px-6 py-3 rounded-lg cursor-pointer hover:bg-blue-700 transition-colors"
+            class="text-white bg-blue-800 px-6 py-3 rounded-lg cursor-pointer transition-colors"
           >
             Visiter la boutique
           </NuxtLink>
@@ -598,7 +598,7 @@ const resetAndScan = () => {
           <button 
             v-if="scanError" 
             @click="resetAndScan" 
-            class="text-white bg-blue-800 px-6 py-3 rounded-lg cursor-pointer hover:bg-blue-700 transition-colors"
+            class="text-white bg-blue-800 px-6 py-3 rounded-lg cursor-pointer transition-colors"
           >
             Réessayer
           </button>

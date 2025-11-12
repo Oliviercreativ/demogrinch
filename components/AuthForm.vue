@@ -320,7 +320,7 @@ const handleRegister = async () => {
       <button 
         type="submit" 
         :disabled="isLoading"
-        class="w-full bg-blue-800 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-all disabled:bg-blue-300 font-medium"
+        class="w-full bg-blue-800 text-white py-3 px-4 rounded-lg transition-all disabled:bg-blue-300 font-medium"
       >
         <span v-if="isLoading" class="flex items-center justify-center">
           <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -411,7 +411,7 @@ const handleRegister = async () => {
       <button 
         type="submit" 
         :disabled="isLoading"
-        class="w-full bg-blue-800 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-all disabled:bg-blue-300 font-medium"
+        class="w-full bg-blue-800 text-white py-3 px-4 rounded-lg transition-all disabled:bg-blue-300 font-medium"
       >
         <span v-if="isLoading" class="flex items-center justify-center flex-col gap-1">
           <div class="flex items-center">

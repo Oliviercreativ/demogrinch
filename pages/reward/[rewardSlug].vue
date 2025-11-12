@@ -202,14 +202,14 @@ const encouragementMessage = computed(() => {
                             </div>
                           </div>
                           <div v-else class="flex justify-start items-center gap-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon w-10 stroke-orange-600 icon-tabler icon-tabler-circle-check" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#166534" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon w-10 stroke-cyan-600 icon-tabler icon-tabler-circle-check" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#166534" fill="none" stroke-linecap="round" stroke-linejoin="round">
                               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                               <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                               <path d="M9 12l2 2l4 -4" />
                             </svg>
                             <div class="">
                               <p class="text-sm text-gray-700"><span class="font-bold">{{ shop.lot }}</span></p>
-                              <p class="text-sm text-orange-600 mt-1">Récompense non utilisée</p>
+                              <p class="text-sm text-cyan-600 mt-1">Récompense non utilisée</p>
                             </div>
                           </div>
                         </div>
@@ -282,7 +282,7 @@ const encouragementMessage = computed(() => {
       </div>
       <div v-else class="text-center text-gray-600 p-4">
         <p>Vous devez être connecté pour accéder à cette page.</p>
-        <button @click="redirectToLogin" class="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 rounded mt-4">
+        <button @click="redirectToLogin" class="bg-blue-800 text-white font-bold py-2 rounded mt-4">
           Se connecter
         </button>
       </div>

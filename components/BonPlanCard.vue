@@ -15,7 +15,7 @@ const emit = defineEmits(['edit', 'delete', 'toggle-active'])
 const getBadgeClass = (position) => {
   const classes = {
     'pub': 'bg-purple-600 text-white',
-    'bonplan': 'bg-orange-500 text-white',
+    'bonplan': 'bg-cyan-500 text-white',
     'evenement': 'bg-pink-500 text-white',
     'atelier': 'bg-blue-500 text-white'
   }

@@ -132,7 +132,7 @@ onMounted(fetchMessage)
                   'text-xs font-medium px-2 py-0.5 rounded-full',
                   message.category === 'urgent' ? 'bg-red-100 text-red-800' :
                   message.category === 'promo' ? 'bg-green-100 text-green-800' :
-                  message.category === 'maintenance' ? 'bg-orange-100 text-orange-800' :
+                  message.category === 'maintenance' ? 'bg-cyan-100 text-cyan-800' :
                   message.category === 'update' ? 'bg-yellow-100 text-yellow-800' :
                   'bg-blue-100 text-blue-800'
                 ]">
@@ -150,7 +150,7 @@ onMounted(fetchMessage)
           <span v-if="message.type === 'global' && message.priority > 0"
                 :class="[
                   'text-xs font-medium px-2 py-0.5 rounded-full',
-                  message.priority === 2 ? 'bg-red-100 text-red-800' : 'bg-orange-100 text-orange-800'
+                  message.priority === 2 ? 'bg-red-100 text-red-800' : 'bg-cyan-100 text-cyan-800'
                 ]">
             {{ message.priority === 2 ? '⚠️ Urgent' : '📌 Important' }}
           </span>
@@ -188,7 +188,7 @@ onMounted(fetchMessage)
         <a v-if="message.type === 'global' && message.link_url"
            :href="message.link_url"
            target="_blank"
-           class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
+           class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg transition-colors">
           {{ message.link_label || 'Voir plus' }}
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
             <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />

@@ -127,7 +127,7 @@ watch(user, async (newUser) => {
           <span v-for="tag in availableTags" :key="tag" :class="[
             'cursor-pointer px-3 py-1 rounded-full text-xs font-normal transition-colors',
             selectedTags?.split(',').map(t => t.trim()).includes(tag)
-              ? 'bg-blue-800 text-white hover:bg-blue-800'
+              ? 'bg-blue-800 text-white'
               : 'bg-zinc-100 text-blue-800 hover:bg-zinc-200'
           ]" @click="toggleTag(tag, 'tag')">
             {{ tag }}
@@ -137,7 +137,7 @@ watch(user, async (newUser) => {
       <!-- Bouton de mise à jour -->
       <div class="flex w-full px-2">
         <button @click="updatePreferences"
-          class="bg-blue-800 hover:bg-blue-800 text-xs font-normal  text-white px-4 py-2 rounded-full transition-colors">
+          class="bg-blue-800 text-xs font-normal  text-white px-4 py-2 rounded-full transition-colors">
           Mettre à jour mes préférences
         </button>
       </div>
@@ -160,7 +160,7 @@ watch(user, async (newUser) => {
           <span v-for="shop in shops" :key="shop.slug" :class="[
             'cursor-pointer px-3 py-1 rounded-full text-xs font-normal transition-colors',
             selectedShops?.split(',').map(s => s.trim()).includes(shop.slug)
-              ? 'bg-blue-800 text-white hover:bg-blue-800'
+              ? 'bg-blue-800 text-white'
               : 'bg-zinc-100 text-blue-800 hover:bg-zinc-200'
           ]" @click="toggleTag(shop.slug, 'shop')">
             {{ shop.name_shop }}
@@ -170,7 +170,7 @@ watch(user, async (newUser) => {
       <!-- Bouton de mise à jour -->
       <div class="flex w-full px-2">
         <button @click="updatePreferences"
-          class="bg-blue-800 hover:bg-blue-800 text-xs font-normal  text-white px-4 py-2 rounded-full transition-colors">
+          class="bg-blue-800 text-xs font-normal  text-white px-4 py-2 rounded-full transition-colors">
           Mettre à jour mes préférences
         </button>
       </div>

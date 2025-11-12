@@ -58,7 +58,7 @@
             </div>
 
             <button @click="testNuxtAPI" :disabled="isTestingAPI"
-                class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed">
+                class="bg-blue-600 text-white px-6 py-2 rounded-md disabled:opacity-50 disabled:cursor-not-allowed">
                 {{ isTestingAPI ? 'Test en cours...' : '📱 Test API Nuxt' }}
             </button>
 
@@ -83,7 +83,7 @@
                 </button>
 
                 <button @click="processQueue" :disabled="isProcessingQueue"
-                    class="bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700 disabled:opacity-50">
+                    class="bg-cyan-600 text-white px-4 py-2 rounded-md hover:bg-cyan-700 disabled:opacity-50">
                     {{ isProcessingQueue ? 'Traitement...' : '⚡ Traiter Queue' }}
                 </button>
             </div>

@@ -116,7 +116,7 @@ onMounted(fetchUserStats)
         </NuxtLink>
       </div>
       <div class="flex-shrink-0 w-[45%] p-2 snap-center">
-        <div class="bg-orange-100 rounded-lg p-4 flex flex-col items-center justify-center h-full gap-2">
+        <div class="bg-cyan-100 rounded-lg p-4 flex flex-col items-center justify-center h-full gap-2">
             <ShareButton />
         </div>
       </div>

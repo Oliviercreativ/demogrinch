@@ -17,7 +17,7 @@
 
               <div class="flex gap-2 mt-4">
                 <button @click="handleAccept" :disabled="isLoading"
-                  class="bg-blue-600 text-white px-4 py-2.5 rounded-lg text-sm font-medium hover:bg-blue-700 disabled:opacity-50 flex-1 transition-colors">
+                  class="bg-blue-600 text-white px-4 py-2.5 rounded-lg text-sm font-medium disabled:opacity-50 flex-1 transition-colors">
                   <span v-if="isLoading" class="inline-block mr-2">
                     <svg class="animate-spin h-4 w-4" fill="none" viewBox="0 0 24 24">
                       <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
@@ -46,7 +46,7 @@
     <!-- Bouton Discret -->
     <Transition name="fade">
       <button v-if="showDiscreteButton" @click="handleDiscreteClick"
-        class="fixed bottom-20 right-4 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 z-40 transition-all hover:scale-110"
+        class="fixed bottom-20 right-4 bg-blue-600 text-white p-3 rounded-full z-40 transition-all hover:scale-110"
         title="Activer les notifications">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

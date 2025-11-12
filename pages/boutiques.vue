@@ -203,9 +203,6 @@ onMounted(async () => {
                       class="h-[300px] object-cover w-full rounded-lg">
                   </figure>
                   <div class="p-4 flex flex-col items-start justify-start gap-3">
-                    <div class="flex items-center justify-between gap-2 w-full">
-                      <p class="text-blue-800 font-bold bg-blue-100 rounded-lg p-2 text-xs">{{ boutique.actif }}</p>
-                    </div>
                     <div class="flex items-center justify-start gap-2 w-full">
                       <p class="text-2xl font-bold text-blue-800">{{ boutique.name_shop }}</p>
                     </div>

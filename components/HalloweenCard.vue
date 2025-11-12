@@ -13,7 +13,7 @@
         >
         
         <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex items-center rounded-lg">
-          <div class="p-6 text-orange-500 flex flex-col justify-start items-start gap-2 relative">
+          <div class="p-6 text-cyan-500 flex flex-col justify-start items-start gap-2 relative">
             <p class="font-bold text-lg">
               Fêtons Halloween avec le photobooth
             </p>

@@ -140,7 +140,7 @@ const props = defineProps({
       <h3 class="text-lg font-semibold text-gray-900 mb-2">Connectez-vous pour évaluer</h3>
       <p class="text-gray-600 mb-4">Votre avis compte ! Connectez-vous pour partager votre expérience avec Grinch.</p>
       <NuxtLink to="/login"
-        class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+        class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-lg transition-colors">
         Se connecter
       </NuxtLink>
     </div>

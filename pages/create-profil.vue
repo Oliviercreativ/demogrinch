@@ -409,7 +409,7 @@ const createProfile = async () => {
             <p v-else-if="emailStatus === 'checking'" class="text-xs text-yellow-600 mt-1">
               ⏳ Vérification en cours...
             </p>
-            <p v-else-if="email && !isValidEmail(email)" class="text-xs text-orange-600 mt-1">
+            <p v-else-if="email && !isValidEmail(email)" class="text-xs text-cyan-600 mt-1">
               ⚠️ Format email invalide
             </p>
           </div>
@@ -442,7 +442,7 @@ const createProfile = async () => {
             <p v-else-if="telStatus === 'checking'" class="text-xs text-yellow-600 mt-1">
               ⏳ Vérification en cours...
             </p>
-            <p v-else-if="tel && !isValidPhone(tel)" class="text-xs text-orange-600 mt-1">
+            <p v-else-if="tel && !isValidPhone(tel)" class="text-xs text-cyan-600 mt-1">
               ⚠️ Numéro invalide (doit commencer par 06 ou 07)
             </p>
           </div>
@@ -462,7 +462,7 @@ const createProfile = async () => {
               title="Veuillez entrer un code postal valide (5 chiffres)"
               class="mb-3 w-full rounded-lg border border-blue-800 bg-zinc-100 outline-blue-400 px-5 py-3"
             >
-            <p v-if="adresse && !isValidPostalCode(adresse)" class="text-xs text-orange-600 -mt-2 mb-3">
+            <p v-if="adresse && !isValidPostalCode(adresse)" class="text-xs text-cyan-600 -mt-2 mb-3">
               ⚠️ Le code postal doit contenir 5 chiffres
             </p>
           </div>

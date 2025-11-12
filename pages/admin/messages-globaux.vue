@@ -15,7 +15,7 @@
       <div class="mb-6 flex justify-between items-center">
         <button
           @click="showModal = true; resetForm()"
-          class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors"
+          class="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-colors"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
@@ -73,7 +73,7 @@
                     :class="[
                       'px-2 py-1 text-xs font-medium rounded-full',
                       message.priority === 2 ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-200' :
-                      message.priority === 1 ? 'bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-200' :
+                      message.priority === 1 ? 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-200' :
                       'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200'
                     ]"
                   >
@@ -432,7 +432,7 @@
               <button
                 type="submit"
                 :disabled="saving"
-                class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors disabled:opacity-50"
+                class="px-4 py-2 bg-blue-600 text-white rounded-lg transition-colors disabled:opacity-50"
               >
                 {{ saving ? 'Enregistrement...' : (editingMessage ? 'Mettre à jour' : 'Créer') }}
               </button>
@@ -662,7 +662,7 @@ function getCategoryClass(category) {
     info: 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-200',
     promo: 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-200',
     update: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-200',
-    maintenance: 'bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-200',
+    maintenance: 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-200',
     urgent: 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-200'
   }
   return classes[category] || 'bg-gray-100 text-gray-800'
