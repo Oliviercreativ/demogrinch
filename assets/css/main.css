@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  /*background-color: #f9fbfb;*/
+  background-color: white;
+  color: rgba(0,0,0,0.8);
+  font-family: 'Poppins', sans-serif;
+}
+.dark-mode body {
+  background-color: #091a28;
+  color: #ebf4f1;
+}
+@layer utilities {
+  .dark .text-blue-800 {
+    color: white !important;
+  }
+}
