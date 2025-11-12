@@ -62,7 +62,7 @@ onMounted(async () => {
 <template>
   <div>
     <div class="pb-24" :class="{
-      'bg-gray-900 text-white': $colorMode.value === 'dark',
+      'bg-white text-gray-900': $colorMode.value === 'dark',
       'bg-white text-gray-900': $colorMode.value === 'light'
     }">
       <div class="p-4 mx-auto max-w-2xl">
@@ -78,14 +78,13 @@ onMounted(async () => {
             <NotificationButton />
             <OwnerDashboard />
             <NewMessageBanner />
+            <BoxFavoriesLimit :limit="20" />
             <div class="w-full flex justify-center items-center flex-col gap-4">
               <AdSidebar type="boutique" position="medium" />
             </div>
-            
             <LastShop />
             <ShareFaq />
             <MessagesBanner />
-            <MadeinConflans />
             <NewsletterSignup />
           </div>
         </div>

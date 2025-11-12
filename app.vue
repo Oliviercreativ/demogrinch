@@ -73,24 +73,53 @@ onMounted(async () => {
 </script>
 
 <template>
-  <NuxtLoadingIndicator />
-  <VitePwaManifest />
-  <ClientOnly>
-    <div v-if="!isMobile" class="fixed inset-0 z-50 bg-black/80 w-screen h-screen">
-      <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-full h-full flex items-center justify-center">
-        <div class="text-center flex flex-col justify-center items-center">
-          <h2 class="text-xl font-bold mb-4 text-blue-800">Site uniquement disponible sur mobile</h2>
-          <p>Veuillez consulter ce site depuis votre téléphone portable.</p>
+  <div class="light-mode">
+    <NuxtLoadingIndicator />
+    <VitePwaManifest />
+    <ClientOnly>
+      <div v-if="!isMobile" class="fixed inset-0 z-50 bg-black/80 w-screen h-screen">
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-full h-full flex items-center justify-center">
+          <div class="text-center flex flex-col justify-center items-center">
+            <h2 class="text-xl font-bold mb-4 text-blue-800">Site uniquement disponible sur mobile</h2>
+            <p>Veuillez consulter ce site depuis votre téléphone portable.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </ClientOnly>
+    </ClientOnly>
 
-  <ServiceWorkerUpdateNotification />
-  <HeaderTdb v-if="showAdminbar" />
-  <NavBar v-if="showNavbar" />
-  <Header v-if="showHeader" />
-  <NuxtPage />
-  <Footer v-if="showFooter" />
+    <ServiceWorkerUpdateNotification />
+    <HeaderTdb v-if="showAdminbar" />
+    <NavBar v-if="showNavbar" />
+    <Header v-if="showHeader" />
+    <NuxtPage />
+    <Footer v-if="showFooter" />
+  </div>
 </template>
+
+<style>
+/* Forcer le mode light sur toute l'application */
+html,
+body,
+#__nuxt {
+  color-scheme: light !important;
+  background-color: #ffffff !important;
+}
+
+.light-mode {
+  color-scheme: light !important;
+}
+
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+/* Empêcher les styles dark mode de s'appliquer */
+.dark,
+.dark-mode,
+[data-theme="dark"] {
+  color-scheme: light !important;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+</style>

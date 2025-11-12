@@ -202,7 +202,6 @@ onMounted(async () => {
         </div>
 
         <div class="flex flex-col justify-start items-stretch gap-3 w-full pb-5">
-          <StatReward />
           <ShareFaq />
         </div>
 
@@ -221,8 +220,7 @@ onMounted(async () => {
         <div class="bg-white overflow-hidden shadow rounded-lg border-t-1 border-gray-200 dark:bg-gray-800">
           <div class="px-4 py-5 sm:px-6">
             <p class="text-sm font-medium text-blue-900 uppercase">Votre QR Code personnel</p>
-            <p class="text-xs font-medium text-zinc-500">Certains boutiques peuvent vous demander votre QRcode pour
-              valider votre récompense</p>
+            <p class="text-xs font-medium text-zinc-500">Certains boutiques peuvent vous demander votre QRcode pourvalider votre récompense</p>
           </div>
           <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
             <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -233,7 +231,7 @@ onMounted(async () => {
             </div>
           </div>
         </div>
-
+ 
         <div class="bg-white overflow-hidden shadow rounded-lg border dark:bg-gray-800">
           <div class="px-4 py-5 sm:px-6">
             <p class="text-sm font-medium text-blue-900 uppercase">Paramètres de l'application</p>

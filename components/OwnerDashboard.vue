@@ -123,7 +123,7 @@ const showDashboard = computed(() => isOwner.value && boutique.value)
             <p class="text-blue-200 text-sm">Tableau de bord</p>
           </div>
         </div>
-        <NuxtLink to="/admin/validate-reward"
+        <NuxtLink to="/admin"
           class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
           Gérer →
         </NuxtLink>

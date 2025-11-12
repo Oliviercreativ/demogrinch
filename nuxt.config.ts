@@ -282,13 +282,10 @@ pwa: {
   },
 
   colorMode: {
-    preference: 'light',
+    preference: 'light', // Forcer le mode light
     fallback: 'light',
-    hid: 'nuxt-color-mode-script',
-    globalName: '__NUXT_COLOR_MODE__',
-    componentName: 'ColorScheme',
-    classPrefix: '',
-    classSuffix: '-mode',
+    dataValue: 'light', // Force la valeur du data attribute
+    classSuffix: '', // Pas de suffix sur les classes
     storageKey: 'nuxt-color-mode'
   },
 

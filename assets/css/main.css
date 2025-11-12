@@ -6,18 +6,30 @@ p {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Forcer le mode light uniquement */
 body {
-  /*background-color: #f9fbfb;*/
-  background-color: white;
-  color: rgba(0,0,0,0.8);
+  background-color: white !important;
+  color: rgba(0,0,0,0.8) !important;
   font-family: 'Poppins', sans-serif;
 }
-.dark-mode body {
-  background-color: #091a28;
-  color: #ebf4f1;
+
+/* Supprimer tous les styles dark mode */
+html,
+body {
+  color-scheme: light !important;
 }
+
+/* Empêcher les classes dark de fonctionner */
+.dark,
+.dark-mode,
+[data-theme="dark"] {
+  background-color: white !important;
+  color: rgba(0,0,0,0.8) !important;
+}
+
 @layer utilities {
+  /* Désactiver les utilities dark mode */
   .dark .text-blue-800 {
-    color: white !important;
+    color: #1e40af !important; /* Garder le bleu original */
   }
 }
