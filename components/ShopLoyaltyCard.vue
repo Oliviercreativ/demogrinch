@@ -56,14 +56,6 @@ const fetchShopLoyaltyCard = async () => {
       emit('card-not-found')
       return
     }
-
-    if (!rewardData) {
-      error.value = 'Aucune carte de fidélité pour cette boutique'
-      emit('card-not-found')
-      loading.value = false
-      return
-    }
-
     reward.value = rewardData
 
     // Récupérer les détails de la boutique
@@ -238,11 +230,6 @@ onMounted(() => {
           </div>
         </div>
       </NuxtLink>
-    </div>
-
-    <!-- Aucune carte -->
-    <div v-else class="bg-gray-50 border border-gray-200 rounded-lg p-4 text-center">
-      <p class="text-gray-500 text-sm">Aucune carte de fidélité pour cette boutique</p>
     </div>
   </div>
 </template>

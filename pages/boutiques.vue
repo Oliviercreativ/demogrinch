@@ -31,7 +31,8 @@ const fetchBoutiques = async () => {
     const { data, error: fetchError } = await supabase
       .from('boutique')
       .select('*')
-      .eq('statut', true)
+      .eq('statut', false)
+      .eq('demo', true)
       .order('name_shop', { ascending: true })
     
     if (fetchError) throw fetchError

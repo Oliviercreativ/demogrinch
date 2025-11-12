@@ -231,22 +231,6 @@ onMounted(async () => {
             </div>
           </div>
         </div>
- 
-        <div class="bg-white overflow-hidden shadow rounded-lg border dark:bg-gray-800">
-          <div class="px-4 py-5 sm:px-6">
-            <p class="text-sm font-medium text-blue-900 uppercase">Paramètres de l'application</p>
-          </div>
-          <div class="border-t border-gray-200 px-4 py-5 sm:p-0">
-            <dl class="sm:divide-y sm:divide-gray-200">
-              <div class="py-3 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                <dt class="text-xs font-semibold text-blue-800 uppercase dark:text-white">Activer le dark-mode</dt>
-                <dd class="mt-1 text-sm text-gray-700 sm:mt-0 sm:col-span-2">
-                  <themeSwitch />
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
 
         <div class="bg-white overflow-hidden shadow rounded-lg border dark:bg-gray-800">
           <div class="px-4 py-5 sm:px-6">

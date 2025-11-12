@@ -41,7 +41,8 @@ const fetchData = async () => {
     const { data: shopsData } = await supabase
       .from('boutique')
       .select('slug, name_shop')
-      .eq('statut', true)
+      .eq('statut', false)
+      .eq('demo', true)
       .order('name_shop', { ascending: true })
 
     shops.value = shopsData || []

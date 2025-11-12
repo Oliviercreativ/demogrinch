@@ -193,7 +193,7 @@ const fetchScannedBoutique = async () => {
               <div class="rounded-lg w-30 bg-white z-1 -mt-20 p-2">
                 <figure>
                   <img :src="boutique.logo_shop" :alt="boutique.name_shop"
-                    class="bg-white object-contain w-24 h-24 rounded-lg">
+                    class="bg-white object-cover w-24 h-24 rounded-lg">
                 </figure>
               </div>
               <div>

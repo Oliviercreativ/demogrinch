@@ -147,7 +147,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
+  <div v-if="filteredRewards.length > 0">
     <!-- Carousel horizontal avec logos uniquement -->
     <div class="relative py-6">
       <p class="text-lg uppercase font-semibold text-blue-800 text-left mb-4">Vos cartes de fidélité</p>
@@ -187,14 +187,6 @@ onMounted(() => {
           </div>
         </NuxtLink>
       </div>
-    </div>
-
-    <!-- Message si aucune carte -->
-    <div
-      v-if="showEmptyMessage && filteredRewards.length === 0"
-      class="text-center text-gray-500 py-8"
-    >
-      <p class="text-sm">Aucune carte de fidélité</p>
     </div>
   </div>
 </template>

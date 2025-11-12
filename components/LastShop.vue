@@ -10,7 +10,8 @@ const fetchLatestShops = async () => {
   const { data } = await supabase
     .from('boutique')
     .select('id, slug, name_shop, photo_url, categories_shop, lot')
-    .eq('statut', true)
+    .eq('statut', false)
+    .eq('demo', true)
     .order('created_at', { ascending: false })
     .limit(5);
 
