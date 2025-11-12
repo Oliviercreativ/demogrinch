@@ -103,7 +103,7 @@ onMounted(fetchMessage)
       <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-800"></div>
     </div>
 
-    <div v-else-if="message" class="bg-white rounded-lg shadow-lg overflow-hidden">
+    <div v-else-if="message" class="bg-white rounded-lg overflow-hidden">
       <!-- En-tête -->
       <div class="bg-white text-white p-4 border-b border-gray-200">
         <div class="flex justify-between items-center mb-3">

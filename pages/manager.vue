@@ -123,7 +123,7 @@ onMounted(async () => {
           </p>
           <div v-else>
             <div v-for="reward in rewards" :key="reward.id" 
-                 class="bg-white rounded-lg shadow-md p-4 mb-4"
+                 class="bg-white rounded-lg p-4 mb-4"
                  :class="{ 
                    'border-2 border-blue-500': !reward.is_used,
                    'border border-gray-200': reward.is_used 

@@ -4,7 +4,7 @@
 
     <div class="max-w-2xl mx-auto">
       <!-- Statistiques du jeu -->
-      <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
+      <div class="bg-white rounded-lg p-6 mb-6">
         <h2 class="text-xl font-bold mb-4">Statistiques du jeu</h2>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
           <div class="bg-white rounded-lg shadow p-6">

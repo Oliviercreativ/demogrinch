@@ -1,7 +1,7 @@
 <!-- components/DoublePointsBanner.vue -->
 <template>
   <div v-if="campaignInfo"
-    class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white p-4 rounded-lg shadow-lg mb-6 animate-pulse">
+    class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white p-4 rounded-lg mb-6 animate-pulse">
     <div class="flex items-center justify-between">
       <div class="flex items-center space-x-3">
         <div class="bg-white bg-opacity-20 rounded-full p-2">

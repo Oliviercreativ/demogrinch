@@ -275,7 +275,7 @@ onMounted(() => {
 
       <div class="grid gap-4 mb-6">
         <div v-for="user in paginatedUsers" :key="user.id"
-          class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          class="bg-white rounded-lg overflow-hidden  duration-300">
           <div class="flex items-center p-4 border-b border-gray-100">
             <div class="relative">
               <NuxtLink :to="`/profile/${user.id}`" class="block">

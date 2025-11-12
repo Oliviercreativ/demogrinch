@@ -32,7 +32,7 @@
           Aucun gagnant pour le moment
         </div>
         <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div v-for="(gagnant, index) in gagnants" :key="index" class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div v-for="(gagnant, index) in gagnants" :key="index" class="bg-white rounded-lg shadow overflow-hidden  duration-300">
             <div class="border-l-4 border-green-500 p-4">
               <div class="flex items-center justify-between mb-2">
                 <h3 class="text-lg font-medium text-gray-900">
@@ -86,7 +86,7 @@
           Aucun perdant pour le moment
         </div>
         <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div v-for="(perdant, index) in perdants" :key="index" class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div v-for="(perdant, index) in perdants" :key="index" class="bg-white rounded-lg shadow overflow-hidden  duration-300">
             <div class="border-l-4 border-red-500 p-4">
               <div class="flex items-center justify-between mb-2">
                 <h3 class="text-lg font-medium text-gray-900">

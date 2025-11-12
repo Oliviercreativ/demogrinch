@@ -23,7 +23,7 @@ onMounted(async () => {
 </script>
 
 <template>
-    <NuxtLink to="#" class="flex items-center justify-center text-center text-balance p-1 gap-3 text-xs font-semibold bg-blue-800 text-white uppercase dark:text-white">
+    <NuxtLink to="/admin" class="flex items-center justify-center text-center text-balance p-1 gap-3 text-xs font-semibold bg-blue-800 text-white uppercase dark:text-white">
       Accès à mon tableau de bord →
     </NuxtLink>
 </template>

@@ -53,7 +53,7 @@
           <div
             v-for="message in sortedMessages"
             :key="message.id"
-            class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+            class="bg-white dark:bg-gray-800 rounded-lg p-6 "
           >
             <div class="flex items-start justify-between">
               <!-- Content -->

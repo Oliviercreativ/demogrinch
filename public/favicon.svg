@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Cercle bleu -->
+  <circle cx="50" cy="50" r="50" fill="#1e40af"/>
+  <!-- Lettre G blanche centrée -->
+  <text x="50" y="68" font-family="Arial, sans-serif" font-size="55" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">G</text>
+</svg>
+

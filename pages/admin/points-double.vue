@@ -1,7 +1,7 @@
 <!-- pages/admin/points-double.vue -->
 <template>
     <div class="container mx-auto px-4 py-8">
-        <div class="bg-white rounded-lg shadow-lg p-6 max-w-md mx-auto">
+        <div class="bg-white rounded-lg p-6 max-w-md mx-auto">
             <h1 class="text-2xl font-bold text-gray-800 mb-8 text-center">Points Compte Double</h1>
 
             <!-- Status actuel -->
@@ -38,7 +38,7 @@
                                     class="block w-16 h-8 rounded-full transition-colors duration-300 ease-in-out">
                                 </div>
                                 <div :class="isActive ? 'translate-x-8' : 'translate-x-0'"
-                                    class="absolute left-0 top-0 bg-white w-8 h-8 rounded-full transition-transform duration-300 ease-in-out shadow-md border border-gray-200">
+                                    class="absolute left-0 top-0 bg-white w-8 h-8 rounded-full transition-transform duration-300 ease-in-out border border-gray-200">
                                 </div>
                             </div>
                             <span class="ml-4 text-lg font-medium text-gray-700">

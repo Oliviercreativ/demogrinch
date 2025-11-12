@@ -35,7 +35,7 @@
       <!-- Form -->
       <form @submit.prevent="saveArticle(true)" class="space-y-6">
         <!-- Titre -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
             Titre *
           </label>
@@ -49,7 +49,7 @@
         </div>
 
         <!-- Slug & Date -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <div class="grid grid-cols-2 gap-4">
             <div>
               <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -81,7 +81,7 @@
         </div>
 
         <!-- Extrait -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
             Extrait (Excerpt)
           </label>
@@ -94,7 +94,7 @@
         </div>
 
         <!-- SEO -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">SEO & Permalien</h3>
           
           <div class="space-y-4">
@@ -148,7 +148,7 @@
         </div>
 
         <!-- Catégories & Tags -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <div class="grid grid-cols-2 gap-4">
             <div>
               <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
@@ -180,7 +180,7 @@
         </div>
 
         <!-- Image de couverture -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-4">
             Image de couverture
           </label>
@@ -191,7 +191,7 @@
         </div>
 
         <!-- Contenu avec Tiptap -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
             Contenu de l'article *
           </label>
@@ -202,7 +202,7 @@
         </div>
 
         <!-- Podcasts (optionnel) -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Podcasts (optionnel)</h3>
           
           <div class="space-y-4">
@@ -260,7 +260,7 @@
         </div>
 
         <!-- Statuts -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Statuts & Visibilité</h3>
           
           <div class="grid grid-cols-2 gap-4">

@@ -60,7 +60,7 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <div class="mt-3 w-full mx-auto p-6 bg-white rounded-lg shadow-md">
+  <div class="mt-3 w-full mx-auto p-6 bg-white rounded-lg">
     <form @submit.prevent="handleSubmit" class="space-y-4">
       <div>
         <label for="email" class="block text-sm font-medium text-center text-blue-800">Recevez l'actualité de GRINCH et des boutiques</label>

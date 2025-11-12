@@ -145,7 +145,7 @@ onMounted(async () => {
           </button>
         </div>
 
-        <div v-else class="bg-white rounded-lg shadow-md p-4">
+        <div v-else class="bg-white rounded-lg p-4">
           <h1 class="text-xl uppercase text-blue-800 font-semibold mb-4">
             Validation automatique de récompense
           </h1>

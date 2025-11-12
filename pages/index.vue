@@ -61,10 +61,7 @@ onMounted(async () => {
 
 <template>
   <div>
-    <div class="pb-24" :class="{
-      'bg-white text-gray-900': $colorMode.value === 'dark',
-      'bg-white text-gray-900': $colorMode.value === 'light'
-    }">
+    <div class="pb-24">
       <div class="p-4 mx-auto max-w-2xl">
         <!-- Loader -->
         <div v-if="isLoading">

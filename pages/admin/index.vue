@@ -186,7 +186,7 @@ onMounted(async () => {
             <div 
               v-for="boutique in demoBoutiques" 
               :key="boutique.id"
-              class="bg-white rounded-lg shadow p-4 cursor-pointer hover:shadow-lg transition-shadow"
+              class="bg-white rounded-lg shadow p-4 cursor-pointer "
               @click="assignDemoBoutique(boutique)"
             >
               <div class="flex items-center gap-4">

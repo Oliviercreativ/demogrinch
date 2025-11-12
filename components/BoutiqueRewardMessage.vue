@@ -176,7 +176,7 @@ const currentPoints = computed(() => props.currentPoints)
       v-if="currentMessage && currentMessage.linkable" 
       to="/notifications"
       :class="[
-        'rounded-lg p-4 mb-4 flex items-center gap-3 shadow-md cursor-pointer hover:shadow-lg transition-shadow',
+        'rounded-lg p-4 mb-4 flex items-center gap-3 cursor-pointer ',
         currentMessage.bgColor,
         currentMessage.borderColor,
         'border'
@@ -213,7 +213,7 @@ const currentPoints = computed(() => props.currentPoints)
     <div 
       v-else-if="currentMessage"
       :class="[
-        'rounded-lg p-4 mb-4 flex items-center gap-3 shadow-md',
+        'rounded-lg p-4 mb-4 flex items-center gap-3',
         currentMessage.bgColor,
         currentMessage.borderColor,
         'border'

@@ -4,7 +4,7 @@
         <h1 class="text-3xl font-bold text-gray-800 mb-8">🧪 Test Service SMS</h1>
 
         <!-- Test direct du serveur SMS -->
-        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <div class="bg-white rounded-lg p-6 mb-6">
             <h2 class="text-xl font-semibold mb-4 text-blue-800">📡 Test Direct Serveur SMS</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
@@ -41,7 +41,7 @@
         </div>
 
         <!-- Test via API Nuxt -->
-        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <div class="bg-white rounded-lg p-6 mb-6">
             <h2 class="text-xl font-semibold mb-4 text-blue-800">🔄 Test via API Nuxt</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -73,7 +73,7 @@
         </div>
 
         <!-- Test Queue SMS -->
-        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+        <div class="bg-white rounded-lg p-6 mb-6">
             <h2 class="text-xl font-semibold mb-4 text-blue-800">⏳ Gestion Queue SMS</h2>
 
             <div class="flex gap-4 mb-4">
@@ -95,7 +95,7 @@
         </div>
 
         <!-- Statut global -->
-        <div class="bg-white rounded-lg shadow-md p-6">
+        <div class="bg-white rounded-lg p-6">
             <h2 class="text-xl font-semibold mb-4 text-blue-800">📊 Statut Global</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">

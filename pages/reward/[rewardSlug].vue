@@ -188,7 +188,7 @@ const encouragementMessage = computed(() => {
                     </div>
 
                     <div v-if="isRewardCompleted" class="px-1 w-full">
-                      <div class="w-full bg-white shadow-md rounded-lg">
+                      <div class="w-full bg-white rounded-lg">
                         <div class="p-4">
                           <div v-if="reward.is_used" class="flex justify-start items-center gap-3">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon w-10 stroke-blue-800 icon-tabler icon-tabler-circle-check" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#166534" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -242,7 +242,7 @@ const encouragementMessage = computed(() => {
 
                     <div v-if="rewardHistory.length > 0" class="w-full mt-6">
                       <h3 class="text-md font-semibold text-blue-800 mb-2">Historique des récompenses</h3>
-                      <div class="w-full bg-white shadow-md rounded-lg" :class="{ 'bg-gray-900 text-white': $colorMode.value === 'dark', 'bg-white text-gray-900': $colorMode.value === 'light' }">
+                      <div class="w-full bg-white rounded-lg" >
                         <ul class="divide-y divide-gray-200">
                           <li v-for="historyItem in rewardHistory" :key="historyItem.id" class="p-4">
                             <div class="flex justify-between items-center">

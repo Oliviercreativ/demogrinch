@@ -543,7 +543,7 @@ const resetAndScan = () => {
     
     <!-- Scanner QR -->
     <div v-else-if="showScanner" class="flex flex-col items-center justify-center p-4">
-      <div class="w-full max-w-md bg-white rounded-lg shadow-md p-4 mb-4">
+      <div class="w-full max-w-md bg-white rounded-lg p-4 mb-4">
         <h2 class="text-xl font-bold text-center mb-4">Scanner un QR code</h2>
         <div id="reader" class="w-full h-64 mb-4"></div>
         <div class="w-full bg-gray-200 rounded-full h-2.5 mb-2">
@@ -552,7 +552,7 @@ const resetAndScan = () => {
         <p class="text-center text-sm text-gray-600">Temps restant: {{ countdown }} secondes</p>
       </div>
       
-      <div v-if="Object.keys(remainingTime).length > 0" class="w-full max-w-md bg-white rounded-lg shadow-md p-4">
+      <div v-if="Object.keys(remainingTime).length > 0" class="w-full max-w-md bg-white rounded-lg p-4">
         <h3 class="text-lg font-semibold mb-2">Cooldowns actifs</h3>
         <div v-for="(cooldown, boutiqueId) in remainingTime" :key="boutiqueId" class="mb-2">
           <p>{{ cooldown.boutiqueName }}: {{ cooldown.remainingTime }} secondes</p>
@@ -562,7 +562,7 @@ const resetAndScan = () => {
     
     <!-- Résultat du scan -->
     <div v-else class="flex justify-center items-center p-4">
-      <div class="w-full max-w-md bg-white rounded-lg shadow-md p-6">
+      <div class="w-full max-w-md bg-white rounded-lg p-6">
         <div class="flex justify-center mb-6">
           <svg v-if="!scanError" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check stroke-blue-800" width="96" height="96" viewBox="0 0 24 24" stroke-width="1" stroke="#166534" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

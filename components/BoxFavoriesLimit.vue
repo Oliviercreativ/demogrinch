@@ -62,12 +62,14 @@ const fetchBoutiqueDetails = async () => {
 }
 
 const uniqueRewards = computed(() => {
+  // Grouper par boutique (store_slug) pour avoir une seule carte par boutique
   const uniqueMap = new Map()
   rewards.value.forEach(reward => {
-    if (!uniqueMap.has(reward.rewardSlug) || reward.hit_date > uniqueMap.get(reward.rewardSlug).hit_date) {
-      uniqueMap.set(reward.rewardSlug, {
+    const boutiqueSlug = reward.store_slug
+    if (!uniqueMap.has(boutiqueSlug) || reward.hit_date > uniqueMap.get(boutiqueSlug).hit_date) {
+      uniqueMap.set(boutiqueSlug, {
         ...reward,
-        boutique: boutiques.value[reward.store_slug]
+        boutique: boutiques.value[boutiqueSlug]
       })
     }
   })
@@ -156,13 +158,13 @@ onMounted(() => {
         <!-- Carte pour chaque boutique -->
         <NuxtLink
           v-for="reward in filteredRewards"
-          :key="reward.rewardSlug"
+          :key="reward.store_slug"
           :to="`/reward/${reward.rewardSlug}`"
           class="block"
         >
           <div
             class="bg-white rounded-lg p-4"
-            :class="isRewardWon(reward) ? 'bg-white' : isOneVisitAway(reward) ? 'border' : 'border'"
+            :class="isRewardWon(reward) ? 'bg-white' : isOneVisitAway(reward) ? '' : ''"
           >
             <div class="flex items-center gap-4">
               <!-- Logo de la boutique -->

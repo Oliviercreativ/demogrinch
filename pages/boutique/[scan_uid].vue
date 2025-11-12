@@ -603,7 +603,7 @@ defineExpose({
     <!-- Afficher uniquement en cas d'erreur -->
     <div v-else-if="scanError" class="mx-auto max-w-2xl">
       <div class="flex justify-center items-center flex-col p-6 md:p-16 gap-5">
-        <div class="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 w-full max-w-md border border-red-100">
+        <div class="bg-white/90 backdrop-blur-sm rounded-xl p-8 w-full max-w-md border border-red-100">
           <div class="flex justify-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x stroke-red-600"
               width="96" height="96" viewBox="0 0 24 24" stroke-width="1" stroke="#166534" fill="none"

@@ -168,7 +168,7 @@ const updateReward = async (action) => {
     </button>
 
     <div v-if="showAddRewardModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
-      <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+      <div class="relative top-20 mx-auto p-5 border w-96 rounded-md bg-white">
         <p class="text-lg leading-6 font-medium text-blue-800 text-center uppercase">Ajouter un point</p>
         <div class="mb-4">
           <label class="block text-sm font-medium text-gray-700">Utilisateur</label>

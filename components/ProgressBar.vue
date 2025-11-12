@@ -60,7 +60,7 @@
         <p class="text-blue-800 font-normal font-sm">{{ encouragementMessage }}</p>
       </div>
     </div>
-    <div class="w-full bg-white shadow-md rounded-lg">
+    <div class="w-full bg-white rounded-lg">
       <div class="p-4 rounded-lg flex flex-col gap-5">
         <div>
           <p class="text-blue-800 mt-2 font-bold uppercase">Votre avantage</p>

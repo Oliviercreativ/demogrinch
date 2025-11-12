@@ -224,7 +224,7 @@ const sendNotificationHandler = async () => {
 
 <template>
   <div class="p-4 max-w-4xl mx-auto pb-24">
-    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
       <h1 class="text-2xl font-bold text-blue-800 dark:text-white mb-6">
         📤 Envoyer une notification push (FCM)
       </h1>

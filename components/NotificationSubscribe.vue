@@ -1,6 +1,6 @@
 <!-- components/NotificationSubscribe.vue - Version FCM -->
 <template>
-  <div class="flex flex-col items-center justify-center gap-4 shadow-md rounded-lg p-4 w-full">
+  <div class="flex flex-col items-center justify-center gap-4 rounded-lg p-4 w-full">
     <p class="text-blue-800 dark:text-white text-center">Suivez l'actualité de Grinch en recevant nos notifications</p>
     
     <!-- Version bouton avec icône uniquement -->

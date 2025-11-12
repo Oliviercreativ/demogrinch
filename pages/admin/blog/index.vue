@@ -33,7 +33,7 @@
         <div
           v-for="article in articles"
           :key="article.id"
-          class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+          class="bg-white dark:bg-gray-800 rounded-lg p-6 "
         >
           <div class="flex gap-6">
             <!-- Image de couverture -->

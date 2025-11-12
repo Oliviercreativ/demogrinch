@@ -126,10 +126,10 @@ const cardClass = computed(() => {
   }
 
   if (isOneVisitAway.value) {
-    return 'grid grid-cols-2 h-[150px] bg-white rounded-lg border-2 border-blue-800 shadow-lg'
+    return 'grid grid-cols-2 h-[150px] bg-white rounded-lg border-2 border-blue-800'
   }
   if (isRewardWon.value) {
-    return 'grid grid-cols-2 h-[150px] bg-blue-800 rounded-lg shadow-lg'
+    return 'grid grid-cols-2 h-[150px] bg-blue-800 rounded-lg'
   }
   return 'grid grid-cols-2 h-[150px] bg-white rounded-lg shadow'
 })

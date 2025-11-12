@@ -140,7 +140,7 @@ onMounted(() => {
               'bg-pink-500 text-white': bonPlan.position === 'evenement',
               'bg-blue-500 text-white': bonPlan.position === 'atelier'
             }"
-            class="absolute top-2 left-2 px-3 py-1 rounded-full text-xs font-bold uppercase shadow-lg"
+            class="absolute top-2 left-2 px-3 py-1 rounded-full text-xs font-bold uppercase"
           >
             {{ 
               bonPlan.position === 'pub' ? '📢 Pub' :
@@ -151,7 +151,7 @@ onMounted(() => {
           </span>
           <span 
             v-if="bonPlan.featured"
-            class="absolute top-2 right-2 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold shadow-lg"
+            class="absolute top-2 right-2 bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-xs font-bold"
           >
             ⭐ En vedette
           </span>

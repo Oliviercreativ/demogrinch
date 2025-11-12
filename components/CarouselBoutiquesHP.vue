@@ -46,8 +46,8 @@ onMounted(fetchBoutiques)
 
     <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
       <div v-for="boutique in boutiques" :key="boutique.slug" class="w-full">
-        <NuxtLink :to="`/shop/${boutique.slug}`" class="block hover:shadow-xl transition-shadow duration-300">
-          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <NuxtLink :to="`/shop/${boutique.slug}`" class="block hover:shadow-xl  duration-300">
+          <div class="bg-white rounded-lg overflow-hidden">
             <div class="relative">
               <div class="absolute top-3 left-3 bg-blue-800 text-white px-2 py-1 rounded text-sm font-semibold z-10">
                 {{ boutique.categories_shop }}

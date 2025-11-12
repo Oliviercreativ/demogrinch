@@ -118,7 +118,7 @@ onMounted(async () => {
         Aucune récompense n'a été trouvée.
       </p>
       <div v-else>
-        <div v-for="reward in filteredRewards" :key="reward.id" class="bg-white rounded-lg shadow-md p-4 mb-4">
+        <div v-for="reward in filteredRewards" :key="reward.id" class="bg-white rounded-lg p-4 mb-4">
           <div class="flex justify-start items-center gap-5">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="48" height="48" viewBox="0 0 24 24" stroke-width="1" :stroke="reward.is_used ? '#1e40af' : '#F4F4F4'" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

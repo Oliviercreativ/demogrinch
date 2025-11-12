@@ -74,7 +74,7 @@
       <!-- Grid Cards -->
       <div v-else>
         <!-- Empty state -->
-        <div v-if="filteredEntries.length === 0" class="text-center py-12 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+        <div v-if="filteredEntries.length === 0" class="text-center py-12 bg-white dark:bg-gray-800 rounded-lg">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-gray-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
@@ -91,7 +91,7 @@
           <div
             v-for="entry in filteredEntries"
             :key="entry.id"
-            class="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden"
+            class="bg-white dark:bg-gray-800 rounded-lg  overflow-hidden"
           >
             <!-- Card Header with Image -->
             <div class="relative h-32 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-700 dark:to-gray-600">

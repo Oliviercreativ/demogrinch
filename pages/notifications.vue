@@ -261,7 +261,7 @@ const stripHtml = (html) => {
           <div v-for="message in allMessages" 
                 :key="`${message.type}-${message.id}`" 
                 @click="goToMessage(message)"
-                class="rounded-lg shadow-md p-4 mb-4 cursor-pointer hover:shadow-lg transition-shadow"
+                class="rounded-lg p-4 mb-4 cursor-pointer "
                 :class="[
                   !message.is_read ? 'border-2 border-blue-800' : 'bg-white'
                 ]">
@@ -348,7 +348,7 @@ const stripHtml = (html) => {
         <div v-if="activeTab === 'recompenses'">
           <div v-if="processedRewards.length > 0">
           <p class="text-md font-medium text-gray-600 mb-2">Récompenses disponibles</p>
-          <div v-for="reward in processedRewards" :key="reward.id" class="bg-white rounded-lg shadow-md p-4 mb-4">
+          <div v-for="reward in processedRewards" :key="reward.id" class="bg-white rounded-lg p-4 mb-4">
             <div class="flex justify-start items-center gap-5">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-check" width="48" height="48" viewBox="0 0 24 24" stroke-width="1" :stroke="reward.is_used ? '#1e40af' : '#F4F4F4'" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

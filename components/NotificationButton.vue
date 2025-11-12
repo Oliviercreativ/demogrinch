@@ -28,7 +28,7 @@
 
     <!-- Étape 2: Bouton discret pour ceux qui ont refusé -->
     <button v-if="showDiscreteButton" @click="requestNotifications"
-      class="fixed bottom-20 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 z-40"
+      class="fixed bottom-20 right-4 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 z-40"
       title="Activer les notifications">
       🔔
     </button>

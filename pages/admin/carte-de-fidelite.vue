@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
+  <div class="max-w-md mx-auto p-6 bg-white rounded-lg">
     <!-- Indicateur de chargement -->
     <div v-if="isLoading" class="flex justify-center items-center h-64">
       <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-800"></div>

@@ -470,7 +470,7 @@ onMounted(() => {
             </div>
 
             <div class="w-full">
-              <div v-if="isLoading" class="flex justify-center items-center p-4 bg-white rounded-lg shadow-md">
+              <div v-if="isLoading" class="flex justify-center items-center p-4 bg-white rounded-lg">
                 <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500"></div>
               </div>
 
@@ -496,7 +496,7 @@ onMounted(() => {
             </div>
             <div class="w-full flex items-center justify-center py-4">
               <button @click="openReviewModal"
-                class="bg-white text-blue-800 px-8 py-4 rounded-xl font-semibold hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                class="bg-white text-blue-800 px-8 py-4 rounded-xl font-semibold hover:bg-opacity-90 transition-all duration-200 hover:shadow-xl transform hover:-translate-y-1">
                 Laisser un avis
               </button>
             </div>
@@ -505,7 +505,7 @@ onMounted(() => {
             </div>
             <!-- Historique des scans -->
             <div v-if="scanHistory.length > 0" class="w-full mt-6">
-              <div class="bg-white rounded-lg shadow-md overflow-hidden">
+              <div class="bg-white rounded-lg overflow-hidden">
                 <div class="divide-y divide-gray-200">
                   <div v-for="(scan, index) in scanHistory" :key="scan.id"
                     class="p-4 hover:bg-gray-50 transition-colors">

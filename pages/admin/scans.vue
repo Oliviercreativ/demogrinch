@@ -246,7 +246,7 @@ onMounted(fetchData)
       </div>
 
       <div v-if="showDeleteModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full z-50">
-        <div class="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
+        <div class="relative top-20 mx-auto p-5 border w-96 rounded-md bg-white">
           <div class="mt-3 text-left">
             <p class="text-lg leading-6 font-medium text-blue-800 text-center uppercase">Confirmer la suppression</p>
             <div class="mt-2 px-7 py-3">

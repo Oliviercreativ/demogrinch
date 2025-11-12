@@ -24,7 +24,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="rounded-lg shadow-sm">
+  <div class="rounded-lg">
     <div class="flex justify-between items-center mb-4">
       <h2 class="text-lg uppercase text-blue-800 font-semibold">Nouveautés</h2>
       <NuxtLink to="/boutiques" class="text-blue-800 text-sm font-medium hover:text-blue-600">
@@ -33,7 +33,7 @@ onMounted(() => {
     </div>
     <div class="space-y-3">
       <NuxtLink v-for="shop in latestShops" :key="shop.id" :to="`/shop/${shop.slug}`"
-        class="block bg-white rounded-lg shadow hover:shadow-md transition-shadow duration-300">
+        class="block bg-white rounded-lg hover:shadow-md  duration-300">
         <div class="flex items-center space-x-4 p-3">
           <div class="w-20 h-20 flex-shrink-0">
             <img :src="shop.photo_url" :alt="shop.name_shop" loading="lazy"

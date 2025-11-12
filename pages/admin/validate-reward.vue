@@ -71,7 +71,7 @@
       <!-- Liste des récompenses -->
       <div class="space-y-4">
         <div v-for="reward in filteredRewards" :key="reward.id"
-          class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow">
+          class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md ">
           <div class="p-6">
             <!-- Header de la carte -->
             <div class="flex items-start justify-between mb-4">

@@ -116,7 +116,7 @@ async function checkProximity() {
           <div v-for="shop in nearbyShops" :key="shop.id" class="snap-center flex-none w-[90vw] md:w-[400px]">
             <NuxtLink :to="`/shop/${shop.slug}`">
               <div
-                class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-transform hover:scale-[1.02] duration-300 h-[400px]">
+                class="bg-white rounded-2xl overflow-hidden transform transition-transform hover:scale-[1.02] duration-300 h-[400px]">
                 <div class="relative h-48 md:h-64">
                   <div
                     class="absolute top-3 left-3 z-10 bg-blue-800 text-white px-3 py-1 rounded-full text-sm font-medium">

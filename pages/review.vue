@@ -49,7 +49,7 @@ const closeReviewModal = () => {
         </div>
 
         <button @click="openReviewModal"
-          class="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-opacity-90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          class="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-opacity-90 transition-all duration-200 hover:shadow-xl transform hover:-translate-y-1">
           Laisser un avis
         </button>
       </div>

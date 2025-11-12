@@ -39,7 +39,7 @@ const formatDate = (date) => {
 </script>
 
 <template>
-  <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col gap-4">
+  <div class="bg-white rounded-lg shadow transition p-6 flex flex-col gap-4">
     <!-- Image -->
     <div v-if="bonPlan.image_url" class="relative">
       <img 
@@ -49,7 +49,7 @@ const formatDate = (date) => {
       />
       <span 
         :class="getBadgeClass(bonPlan.position)"
-        class="absolute top-2 left-2 px-3 py-1 rounded-full text-xs font-bold uppercase shadow-lg"
+        class="absolute top-2 left-2 px-3 py-1 rounded-full text-xs font-bold uppercase"
       >
         {{ getBadgeText(bonPlan.position) }}
       </span>

@@ -1,6 +1,6 @@
 <!-- components/NotificationToggle.vue - Toggle simple sur une ligne -->
 <template>
-  <div class="flex items-center justify-between p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+  <div class="flex items-center justify-between p-4 bg-white dark:bg-gray-800 rounded-lg">
     <!-- Texte et description -->
     <div class="flex items-center gap-3">
       <span class="text-2xl">
@@ -33,7 +33,7 @@
       </span>
       <span 
         v-else
-        class="inline-block h-6 w-6 transform rounded-full bg-white shadow-lg transition-transform duration-200"
+        class="inline-block h-6 w-6 transform rounded-full bg-white transition-transform duration-200"
         :class="isEnabled ? 'translate-x-7' : 'translate-x-1'"
       ></span>
     </button>

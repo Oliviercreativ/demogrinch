@@ -150,7 +150,7 @@ onMounted(async () => {
 <template>
   <div class="">
     <div class="mt-1 pb-24"
-      :class="{ 'bg-gray-900 text-white': $colorMode.value === 'dark', 'bg-white text-gray-900': $colorMode.value === 'light' }">
+      >
       <div class="p-4 mx-auto max-w-2xl">
         <div class="flex justify-center items-center flex-col gap-3 pt-4pb-4 w-full">
           <p class="text-lg uppercase text-blue-800 font-semibold my-3">Les boutiques</p>
@@ -187,7 +187,7 @@ onMounted(async () => {
 
         <ul v-else-if="filteredBoutiques.length > 0"
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 items-stretch">
-          <li v-for="boutique in filteredBoutiques" :key="boutique.slug" class="bg-white rounded-lg shadow-lg">
+          <li v-for="boutique in filteredBoutiques" :key="boutique.slug" class="bg-white rounded-lg">
             <NuxtLink :to="`/shop/${boutique.slug}`">
               <div class="flex flex-col justify-center items-center bg-white rounded-lg">
                 <div class="w-full rounded-lg relative">

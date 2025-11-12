@@ -103,7 +103,7 @@ html,
 body,
 #__nuxt {
   color-scheme: light !important;
-  background-color: #ffffff !important;
+  background-color:#f7f5f2 !important;
 }
 
 .light-mode {

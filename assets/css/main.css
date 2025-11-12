@@ -33,3 +33,7 @@ body {
     color: #1e40af !important; /* Garder le bleu original */
   }
 }
+
+input {
+  @apply bg-white rounded-lg px-4 py-2;
+}

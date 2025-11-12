@@ -46,7 +46,7 @@
     <!-- Bouton Discret -->
     <Transition name="fade">
       <button v-if="showDiscreteButton" @click="handleDiscreteClick"
-        class="fixed bottom-20 right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 z-40 transition-all hover:scale-110"
+        class="fixed bottom-20 right-4 bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 z-40 transition-all hover:scale-110"
         title="Activer les notifications">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -78,7 +78,7 @@
     <!-- Toast de succès -->
     <Transition name="slide-up">
       <div v-if="showSuccessToast"
-        class="fixed bottom-4 left-4 right-4 bg-green-600 text-white p-4 rounded-lg shadow-lg z-50 max-w-sm mx-auto">
+        class="fixed bottom-4 left-4 right-4 bg-green-600 text-white p-4 rounded-lg z-50 max-w-sm mx-auto">
         <div class="flex items-center gap-3">
           <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />

@@ -42,7 +42,7 @@ const inviteUser = async () => {
 
 <template>
   <div class="max-w-md mx-auto">
-    <div class="bg-white rounded-lg shadow-lg p-6">
+    <div class="bg-white rounded-lg p-6">
       <!-- En-tête -->
       <div class="text-center mb-6">
         <h2 class="text-2xl font-bold text-blue-800 mb-2">

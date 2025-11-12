@@ -104,7 +104,7 @@ onMounted(() => {
 
       <div class="grid lg:grid-cols-2 gap-6">
         <!-- Liste des boutiques -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <h2 class="text-xl font-semibold text-gray-900 dark:text-white mb-4">
             Boutiques ({{ boutiques.length }})
           </h2>
@@ -160,7 +160,7 @@ onMounted(() => {
         </div>
 
         <!-- Détails et QR Code -->
-        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6">
+        <div class="bg-white dark:bg-gray-800 rounded-lg p-6">
           <div v-if="!selectedBoutique" class="text-center py-12 text-gray-500 dark:text-gray-400">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -194,7 +194,7 @@ onMounted(() => {
                 v-if="qrCodeUrl" 
                 :src="qrCodeUrl" 
                 alt="QR Code"
-                class="mx-auto mb-4 rounded-lg shadow-md"
+                class="mx-auto mb-4 rounded-lg"
               />
               <div class="flex gap-2 justify-center">
                 <button

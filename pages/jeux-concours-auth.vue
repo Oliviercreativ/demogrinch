@@ -27,7 +27,7 @@
     <!-- Afficher uniquement en cas d'erreur -->
     <div v-else-if="authError" class="mx-auto max-w-2xl">
       <div class="flex justify-center items-center flex-col p-6 md:p-24 gap-5">
-        <div class="bg-white rounded-lg shadow-md p-6 w-full max-w-md">
+        <div class="bg-white rounded-lg p-6 w-full max-w-md">
           <div class="flex justify-center mb-6">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x stroke-red-600" width="96" height="96" viewBox="0 0 24 24" stroke-width="1" stroke="#166534" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>

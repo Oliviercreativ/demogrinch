@@ -106,7 +106,7 @@ const showDashboard = computed(() => isOwner.value && boutique.value)
 </script>
 
 <template>
-  <div v-if="showDashboard" class="bg-gradient-to-r from-blue-800 to-blue-900 rounded-xl shadow-lg overflow-hidden">
+  <div v-if="showDashboard" class="bg-gradient-to-r from-blue-800 to-blue-900 rounded-xl overflow-hidden">
     <!-- Header du tableau de bord -->
     <div class="px-6 py-4 bg-blue-900/50">
       <div class="flex items-center justify-between">

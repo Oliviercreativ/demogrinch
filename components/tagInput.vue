@@ -106,7 +106,7 @@ watch(user, async (newUser) => {
     <!-- Message de succès -->
 
     <div v-if="updateSuccess" class="bg-white fixed top-10 w-max-full z-30">
-      <span class="text-sm  text-blue-800 text-center bg-white p-4 w-full border shadow-lg rounded-md">
+      <span class="text-sm  text-blue-800 text-center bg-white p-4 w-full border rounded-md">
         Vos préférences ont été mises à jour avec succès !
       </span>
     </div>

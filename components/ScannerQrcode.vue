@@ -3,7 +3,7 @@ import Loader from './Loader.vue'
 </script>
 
 <template>
-  <div class="overflow-hidden sm:rounded-lg shadow-lg w-full">
+  <div class="overflow-hidden sm:rounded-lg w-full">
     <div v-if="isLoading" class="text-center">
       <p class="text-gray-500">
         <Loader />
@@ -12,8 +12,8 @@ import Loader from './Loader.vue'
     <div v-else-if="error" class="text-center text-red-600">
       {{ error }}
     </div>
-    <div v-else ref="statsContainer" class="flex gap-6 flex-col justify-center align-top shadow-lg">
-      <div class="mt-3 w-full mx-auto p-4 bg-white rounded-lg shadow-md">
+    <div v-else ref="statsContainer" class="flex gap-6 flex-col justify-center align-top">
+      <div class="mt-3 w-full mx-auto p-4 bg-white rounded-lg">
         <NuxtLink to="/scanner" class="flex flex-wrap justify-start items-center gap-5">
           <div class="bg-blue-800 rounded-full p-2 text-white">
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
