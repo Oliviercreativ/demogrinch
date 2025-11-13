@@ -76,9 +76,7 @@ onMounted(async () => {
             <OwnerDashboard />
             <NewMessageBanner />
             <BoxFavoriesLimit :limit="5" />
-            <div class="w-full flex justify-center items-center flex-col gap-4">
-              <AdSidebar type="boutique" position="medium" />
-            </div>
+            <BannersList />
             <LastShop />
             <ShareFaq />
             <MessagesBanner />

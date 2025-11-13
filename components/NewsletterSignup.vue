@@ -86,7 +86,7 @@ const handleSubmit = async () => {
           />
         </div>
         <div class="ml-3 text-sm">
-          <label for="share-email" class="font-thin text-xs text-blue-700">
+          <label for="share-email" class="font-thin text-xs text-blue-800">
              J'accepte que mon email soit partagé avec les boutiques partenaires.
           </label>
         </div>

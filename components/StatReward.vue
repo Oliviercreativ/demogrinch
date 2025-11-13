@@ -91,7 +91,7 @@ onMounted(fetchUserStats)
       <div class="flex w-full mx-auto rounded-lg gap-2">
         <div class="flex-shrink-0 w-[49%]">
           <NuxtLink to="/cartes-de-fidelite">
-            <div class="border bg-white hover:bg-blue-50 rounded-lg p-4 flex flex-col items-center justify-center h-full">
+            <div class="rounded-lg p-4 flex flex-col items-center justify-center h-full">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-award stroke-blue-800"
                 width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
                 stroke-linecap="round" stroke-linejoin="round">
@@ -107,7 +107,7 @@ onMounted(fetchUserStats)
         </div>
         <div class="flex-shrink-0 w-[49%]">
           <NuxtLink to="/cartes-de-fidelite">
-            <div class="border bg-white hover:bg-blue-50 rounded-lg p-4 flex flex-col items-center justify-center h-full">
+            <div class="rounded-lg p-4 flex flex-col items-center justify-center h-full">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gift-card stroke-blue-800"
                 width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#000000" fill="none"
                 stroke-linecap="round" stroke-linejoin="round">

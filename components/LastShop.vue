@@ -13,7 +13,7 @@ const fetchLatestShops = async () => {
     .eq('statut', false)
     .eq('demo', true)
     .order('created_at', { ascending: false })
-    .limit(5);
+    .limit(10);
 
   latestShops.value = data;
 };
@@ -26,7 +26,7 @@ onMounted(() => {
 <template>
   <div class="rounded-lg">
     <div class="flex justify-between items-center mb-4">
-      <h2 class="text-lg uppercase text-blue-800 font-semibold">Nouveautés</h2>
+      <h2 class="text-lg uppercase text-blue-800 font-semibold">Nouvelle boutiques</h2>
       <NuxtLink to="/boutiques" class="text-blue-800 text-sm font-medium hover:text-blue-600">
         Voir tout
       </NuxtLink>

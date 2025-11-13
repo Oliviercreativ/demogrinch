@@ -149,8 +149,7 @@ onMounted(async () => {
 
 <template>
   <div class="">
-    <div class="mt-1 pb-24"
-      >
+    <div class="mt-1 pb-24">
       <div class="p-4 mx-auto max-w-2xl">
         <div class="flex justify-center items-center flex-col gap-3 pt-4pb-4 w-full">
           <p class="text-lg uppercase text-blue-800 font-semibold my-3">Les boutiques</p>
@@ -204,8 +203,9 @@ onMounted(async () => {
                   </figure>
                   <div class="p-4 flex flex-col items-start justify-start gap-3">
                     <div class="flex items-center justify-start gap-2 w-full">
-                      <p class="text-2xl font-bold text-blue-800">{{ boutique.name_shop }}</p>
+                      <p class="text-blue-800 font-bold py-2 text-sm">{{ boutique.actif}}</p>
                     </div>
+                    <p class="text-2xl font-bold text-blue-800">{{ boutique.name_shop }}</p>
                     <p class="text-gray-700 leading-tight">{{ boutique.address_shop }}</p>
                     <p class="text-blue-800 leading-tight">{{ boutique.formule_shop }}</p>
                   </div>

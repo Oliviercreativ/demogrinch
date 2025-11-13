@@ -60,11 +60,10 @@
   const route = useRoute()
   const user = useSupabaseUser()
 
-  const isActivePage = (path) => route.path === path
   const linkClasses = (path) => {
   const isActive = route.path === path
   return {
-    'text-blue-800': isActive,
+    'text-cyan-700': isActive,
     'text-gray-500': !isActive,
     'flex flex-col items-center': true
   }
@@ -73,9 +72,9 @@
 
 <style>
 .router-link-active svg {
-  stroke: rgb(30 64 175 / var(--tw-text-opacity));
+  @apply stroke-cyan-700;
 }
 .router-link-active span {
-  color: rgb(30 64 175 / var(--tw-text-opacity)) !important;
+  @apply text-cyan-700;
 }
 </style>

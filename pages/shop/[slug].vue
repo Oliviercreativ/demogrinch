@@ -199,7 +199,6 @@ const fetchScannedBoutique = async () => {
               <div>
                 <div>
                   <div class="flex justify-start items-start gap-2 flex-col">
-                    <p class="block text-blue-800 font-bold bg-blue-100 rounded-lg p-2 text-xs">{{ boutique.actif }}</p>
                     <div class="flex justify-start items-center gap-2 py-4">
                       <p class="text-2xl font-bold text-blue-800 dark:text-white">{{ boutique.name_shop }}</p>
                     </div>

@@ -74,8 +74,8 @@ onMounted(fetchUserStats)
       {{ error }}
     </div>
     <div v-else ref="statsContainer" class="flex gap-6 flex-col justify-center align-top">
-      <div class="flex w-full mx-auto rounded-lg shadow gap-2">
-        <div class="flex-shrink-0 w-[49%] p-2 border bg-white hover:bg-blue-50 rounded-lg">
+      <div class="flex w-full mx-auto rounded-lg gap-2">
+        <div class="flex-shrink-0 w-[49%] p-2 rounded-lg">
           <NuxtLink to="/faq">
             <div class="rounded-lg p-4 flex flex-col items-center justify-center h-full gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-help-hexagon stroke-blue-800"
@@ -91,7 +91,7 @@ onMounted(fetchUserStats)
             </div>
           </NuxtLink>
         </div>
-        <div class="flex-shrink-0 w-[49%] p-2 border bg-white hover:bg-blue-50 rounded-lg">
+        <div class="flex-shrink-0 w-[49%] p-2 rounded-lg">
           <div class="rounded-lg p-4 flex flex-col items-center justify-center h-full gap-2">
             <ShareButton />
           </div>
