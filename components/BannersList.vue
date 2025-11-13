@@ -25,8 +25,9 @@ const fetchBanners = async () => {
       .from('banners')
       .select('*')
       .eq('position', 'bonplan')
-      .eq('active', true)
-      .eq('public', true)
+      .eq('active', false)
+      .eq('public', false)
+      .eq('demo', true)
       .order('created_at', { ascending: false })
     
     if (props.limit) {
