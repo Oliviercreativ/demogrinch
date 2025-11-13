@@ -121,7 +121,7 @@ onMounted(async () => {
 
 <template>
   <div class="mx-auto max-w-2xl">
-    <div class="pb-24 bg-white">
+    <div class="pb-24">
       <div class="p-4">
         <Loader v-if="isLoading" />
         
