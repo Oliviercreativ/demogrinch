@@ -75,7 +75,7 @@
     </div>
 
     <!-- Avertissement -->
-    <div v-if="showWarning" class="bg-yellow-50 border border-yellow-200 rounded-xl p-4 animate-pulse">
+    <div v-if="showWarning" class="bg-yellow-50 border border-gray-200 rounded-xl p-4 animate-pulse">
       <div class="flex items-start space-x-3">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" fill="none"
           viewBox="0 0 24 24" stroke="currentColor">

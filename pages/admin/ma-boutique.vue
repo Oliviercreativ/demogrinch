@@ -227,7 +227,7 @@ onMounted(async () => {
                         
                         <!-- Messages si activé -->
                         <div v-if="boutique.enable_auto_messages" class="space-y-3 mt-3">
-                          <div v-if="boutique.message_1_point" class="bg-yellow-50 border border-yellow-200 rounded-lg p-3">
+                          <div v-if="boutique.message_1_point" class="bg-yellow-50 border border-gray-200 rounded-lg p-3">
                             <p class="text-xs font-semibold text-yellow-800 mb-1">📬 Message 1er point :</p>
                             <p class="text-sm text-yellow-700">{{ boutique.message_1_point }}</p>
                           </div>

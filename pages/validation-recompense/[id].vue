@@ -150,7 +150,7 @@ onMounted(async () => {
             Validation automatique de récompense
           </h1>
           
-          <div v-if="!reward?.is_used" class="bg-yellow-50 border border-yellow-200 text-yellow-700 p-3 rounded-lg mb-4">
+          <div v-if="!reward?.is_used" class="bg-yellow-50 border border-gray-200 text-yellow-700 p-3 rounded-lg mb-4">
             Validation en cours...
           </div>
 

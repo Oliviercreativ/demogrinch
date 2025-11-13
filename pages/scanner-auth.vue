@@ -498,7 +498,7 @@ const handleUserAuthenticated = async (authenticatedUser) => {
   
   // Si un scan_uid a été stocké, traiter la récompense
   if (storedScanUid.value) {
-    await handleScanResult(`https://madeinconflans.grinch.fr/${storedScanUid.value}`)
+    await handleScanResult(`https://demo.grinch.fr/${storedScanUid.value}`)
   } else {
     // Sinon, afficher le scanner
     showScanner.value = true

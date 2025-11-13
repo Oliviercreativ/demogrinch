@@ -229,7 +229,7 @@ if (user.value) {
           </div>
         </div>
         <div class="p-4 bg-white radius-lg">
-          <QRCode :value="`https://madeinconflans.grinch.fr/presentation/${route.params.slug}`" :size="200" />
+          <QRCode :value="`https://demo.grinch.fr/presentation/${route.params.slug}`" :size="200" />
         </div>
       </div>
     </div>

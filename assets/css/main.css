@@ -51,6 +51,32 @@ input {
   @apply fill-cyan-700;
 }
 
+.bg-blue-700 {
+  @apply bg-cyan-700;
+}
+.text-blue-700 {
+  @apply text-cyan-700;
+}
+.stroke-blue-700 {
+  @apply stroke-cyan-700;
+}
+.fill-blue-700 {
+  @apply fill-cyan-700;
+}
+
+.bg-blue-500 {
+  @apply bg-cyan-700;
+}
+.text-blue-500 {
+  @apply text-cyan-700;
+}
+.stroke-blue-500 {
+  @apply stroke-cyan-700;
+}
+.fill-blue-500 {
+  @apply fill-cyan-700;
+}
+
 .bg-blue-600 {
   @apply bg-cyan-600;
 }

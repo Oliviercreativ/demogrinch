@@ -576,11 +576,7 @@ defineExpose({
 </script>
 
 <template>
-  <div class="min-h-screen bg-white py-8">
-
-    <div class="flex justify-center mb-8">
-      <img src="https://media.madeinconflans.fr/wp-content/uploads/2020/04/logo.svg" alt="Logo" class="h-16" />
-    </div>
+  <div class="py-8">
 
     <!-- Afficher le loader pendant le traitement -->
     <div v-if="isLoading" class="flex flex-col justify-center items-center">
@@ -590,7 +586,7 @@ defineExpose({
     <!-- Formulaire d'authentification si l'utilisateur n'est pas connecté -->
     <div v-else-if="showAuthForm" class="container mx-auto p-2">
       <div class="">
-        <h2 class="text-xl font-semibold text-center mb-6 text-blue-800">Connectez-vous ou créer un compte  pour obtenir votre points de
+        <h2 class="text-xl font-semibold text-center mb-6 text-cyan-800">Connectez-vous ou créer un compte  pour obtenir votre points de
           fidélité</h2>
         <AuthForm 
           @registration-started="startRegistration"
@@ -620,7 +616,7 @@ defineExpose({
 
           <div class="flex justify-center">
             <NuxtLink to="/"
-              class="text-white bg-blue-800 px-6 py-3 rounded-lg cursor-pointer transition-colors">
+              class="text-white bg-cyan-700 px-6 py-3 rounded-lg cursor-pointer transition-colors">
               Retour à l'accueil
             </NuxtLink>
           </div>

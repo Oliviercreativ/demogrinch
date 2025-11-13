@@ -109,7 +109,7 @@ export default defineNuxtConfig({
     },
     cors: {
       origin: [
-        'https://madeinconflans.grinch.fr',
+        'https://demo.grinch.fr',
         'https://halloween.grinch.fr',
         'http://localhost:3000'
       ],

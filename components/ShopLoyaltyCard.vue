@@ -164,15 +164,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div>
+  <div class="w-full">
     <!-- Chargement -->
     <div v-if="loading" class="flex justify-center items-center h-[150px]">
       <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-800"></div>
-    </div>
-
-    <!-- Erreur -->
-    <div v-else-if="error" class="bg-red-50 border border-red-200 rounded-lg p-4 text-center">
-      <p class="text-red-600 text-sm">{{ error }}</p>
     </div>
 
     <!-- Carte de fidélité -->

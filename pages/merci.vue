@@ -89,7 +89,8 @@ const fetchScannedBoutique = async () => {
       const { data: boutique, error: boutiqueError } = await supabase
         .from('boutique')
         .select('*')
-        .eq('statut', true)
+        .eq('statut', false)
+        .eq('demo', true)
         .eq('slug', boutiqueSlug)
         .single()
 

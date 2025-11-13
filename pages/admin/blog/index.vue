@@ -104,7 +104,7 @@
                     </a>
                     
                     <a
-                      :href="`https://madeinconflans.grinch.fr/blog/${article.slug}`"
+                      :href="`https://demo.grinch.fr/blog/${article.slug}`"
                       target="_blank"
                       rel="noopener noreferrer"
                       class="p-2 text-gray-600 hover:text-purple-600 dark:text-gray-400 dark:hover:text-purple-400 transition-colors"
@@ -149,7 +149,7 @@
                     </a>
                     <span class="text-gray-400">|</span>
                     <a
-                      :href="`https://madeinconflans.grinch.fr/blog/${article.slug}`"
+                      :href="`https://demo.grinch.fr/blog/${article.slug}`"
                       target="_blank"
                       class="text-purple-600 hover:underline"
                     >

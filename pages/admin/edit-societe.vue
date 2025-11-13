@@ -502,7 +502,7 @@ onMounted(async () => {
             </div>
           </div>
 
-          <div v-else class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+          <div v-else class="bg-yellow-50 border border-gray-200 rounded-lg p-4">
             <p class="text-sm text-yellow-800">
               💡 <strong>Messages par défaut activés</strong><br>
               Les clients recevront des messages génériques. Activez les messages personnalisés pour créer votre propre contenu.

@@ -2,7 +2,7 @@ Mardi 8 octobre 2024
 - ajout de l'identification avec Google, Spotify, Facebook
 - Amélioration du mot de passe perdu ( correction de l'url )
 - Corrections des recos
-- Changement de l'URL de l'app -> https://madeinconflans.grinch.fr
+- Changement de l'URL de l'app -> https://demo.grinch.fr
 - Changement de la couleur vert -> bleu
 - Ajustement de la partie du scan QRCODE
 - Ajout du bouton itinéraire sur la page boutique

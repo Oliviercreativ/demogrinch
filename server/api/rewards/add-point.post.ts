@@ -146,7 +146,8 @@ export default defineEventHandler(async (event): Promise<AddPointResponse> => {
         .from('boutique')
         .select('*')
         .eq('scan_uid', boutique_slug)
-        .eq('statut', true)
+        .eq('statut', false)
+        .eq('demo', true)
         .single() as { data: BoutiqueData | null, error: any }
       
       boutique = result.data
@@ -158,7 +159,8 @@ export default defineEventHandler(async (event): Promise<AddPointResponse> => {
         .from('boutique')
         .select('*')
         .eq('slug', boutique_slug)
-        .eq('statut', true)
+        .eq('statut', false)
+        .eq('demo', true)
         .single() as { data: BoutiqueData | null, error: any }
       
       boutique = result.data
@@ -362,7 +364,7 @@ export default defineEventHandler(async (event): Promise<AddPointResponse> => {
 
     if (rewardEarned) {
       try {
-        const siteUrl = 'https://madeinconflans.grinch.fr'
+        const siteUrl = 'https://demo.grinch.fr'
         // Utilisez la dernière récompense du tableau rewardsCreated
         const lastReward = rewardsCreated.at(-1)
         
