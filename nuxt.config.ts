@@ -78,7 +78,8 @@ export default defineNuxtConfig({
         {
           name: 'firebase-messaging-sender-id',
           content: process.env.NUXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
-        }
+        },
+        {name: 'robots', content: 'noindex, nofollow'}
       ],
       link: [
         {
