@@ -77,6 +77,7 @@ onMounted(async () => {
             <NewMessageBanner />
             <BoxFavoriesLimit :limit="5" />
             <BannersList />
+            <HomeQRScanner />
             <LastShop />
             <ShareFaq />
             <MessagesBanner />
