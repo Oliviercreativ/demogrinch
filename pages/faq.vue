@@ -7,11 +7,6 @@ definePageMeta({
 
 const faqItems = ref([
   {
-    question: "Qu'est-ce que GRINCH ?",
-    answer: "GRINCH est une initiative locale visant à promouvoir les commerces et artisans de Conflans-Sainte-Honorine. Vous pouvez retrouver plus de 70 professionnels de Conflans dans notre annuaire.<br><a href='https://www.madeinconflans.fr' target='_blank'><b>Voir le site web</b></a>",
-    isOpen: false
-  },
-  {
     question: "Comment fonctionne le programme de fidélité ?",
     answer: "Chaque fois que vous scannez le QR code dans un commerce participant (une fois par jour), vous gagnez un point. Accumulez suffisamment de points pour obtenir des récompenses !",
     isOpen: false
